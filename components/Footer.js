@@ -12,22 +12,22 @@ const Footer =()=>{
             <p>IgniUs is a website that gives the preparation stregies for competative exam.
                  It provide various educational post both for high school and undergraduates.
                  It is developed by HImangshu Baishya , currently studying undergraduate in NIT Karnataka , Surathkal</p>
-                 <Link href="/login"><a className="nav-item nav-link" >LinkedIn</a></Link> 
-                 <p>8638281835</p>
-                <p>baishyahimangshu499@gmail.com</p>   
+                 CONTACT US<br/>
+                 <Link href="/login"><a>LinkedIn</a></Link> 
+                 <p>8638281835
+                baishyahimangshu499@gmail.com</p>  
         </div>
         <div className="intro">
             <h4>QUICK LINK</h4>
-            <ul>
-                <Link href="/"><li>Post</li></Link>
-                <li>Ask</li>
-                <li>JEE</li>
-                <li>NEET</li>
-                <li>CLASS 10</li>
-                <li>Advanced Maths</li>
-                <li>CLASS 11</li>
-                <li>CLASS 12</li>
-            </ul>
+                <Link href="/"><h6>Post</h6></Link>
+                <h6>Ask</h6>
+                <h6>JEE</h6>
+                <h6>NEET</h6>
+                <h6>CLASS 10</h6>
+                <h6>Advanced Maths</h6>
+                <h6>CLASS 11</h6>
+                <h6>CLASS 12</h6>
+            
         </div>
         <div className="intro">
             <h4>Follow Us</h4>
@@ -38,8 +38,10 @@ const Footer =()=>{
         </div>
         </div>
         <div className="copyRight">
-            &copy; IgniUs.com | Designed by HJB@1086
-            <Link href="/login"><label>Admin</label></Link>
+            <p>&copy; IgniUs.com | Designed by HJB@1086
+            <Link href="/login"><label className="AdminBtn">Admin</label></Link>
+            </p>
+            
         </div>
         
     
