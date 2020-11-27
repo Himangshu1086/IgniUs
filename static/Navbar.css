@@ -1,11 +1,9 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
+html,body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-
+    padding-top: 45px !important;
+    position: relative;
+    left: 0%;
 }
 
 a {
@@ -18,21 +16,34 @@ a {
 }
 
 
-/*NAVBAR*/
+    
+
+                             /*NAVBAR*/
 
 /*===================================================================*/
 .navbar-brand{
 font-size: 25px;
-color: white !important;
+color: rgb(255, 255, 255) !important;
 }
 
-.nav-link{
+.nav-link.nav-link{
 
     font-size: 20px;
     margin-right: 35px;
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
 }
 
+.navbar-toggler{
+    outline: none !important;
+}
+
+#navBAr{
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    background:black !important;
+    transition: top 0.3s;
+}
 
 /*===================================================================*/
 
@@ -42,38 +53,22 @@ color: white !important;
 
 .footer-container{
 
-    width: 100%;
-    min-height: 30vh;
+   
     background-color: rgb(0, 0, 0);
-    bottom:0;
-    left: 0%;
-    right: 0%;
-    position: relative;
-    margin-top: auto;
-    display: flex;
     font-family: Allerta Stencil;
-}
-.intro0{
-    text-align: left;
-    color: white;
-    padding: 5px;
-    width: 70%;
-    margin: 10px 10px;
+    bottom: 0%;
+    position: relative;
+    min-height: 100%;
+    left: 0%;
 
 }
-.intro0 > p{
-    width: 50%;
-    font-size: 15px;
-    font-weight: lighter;
-}
+
 
 .intro{
     text-align: center;
     color: white;
-    width: 30%;
     padding: 2px;
-    margin: 10px 10px;
-    display: block;
+    display: flex;
 }
 
 ul{
@@ -82,39 +77,63 @@ ul{
 }
 
 
+.AdminBtn{
+    margin-left: 10px;
+    margin-top: 3px;
+    border: solid white 1px;
+    font-size: 15px;
+    padding: 3px;
+    cursor: pointer;
+}
 
 
 
 
 
 .copyRight{
-    bottom:0;
-    left: 0%;
-    right: 0%;
-    position: relative;
-    margin-top: auto;
-    text-align: center;
-    font-weight: bold;
     color: white;
-    background-color: rgb(75, 75, 75);
-    padding-top: 2px;
+    background-color: rgb(27, 27, 27);
+   padding:5px;
+   bottom: 0%;
+   width: 100%;
+   height: auto;
     
 }
-
-.copyRight > label{
-    margin-left: 20px;
-    margin-top: 2px;
-    border: solid white 1px;
-    padding: 3px;
+.copyRight >p{
+    text-align: center;
+    font-family: Allerta Stencil;
+}
+.quickLINK >p{
+text-align: center;
+color: white;
+font-size: 20px;
+font-family: Allerta Stencil;
+}
+.quickLINK > pre{
+    text-align: center;
+    color: white;
+    font-family: Allerta Stencil;
+}
+a{
+    text-decoration: none !important;
 }
 
 /*===================================================================*/
 
 /* HOME PAGE    */
 
+
+.socialMedia{
+    display: flex;
+    margin-left: 40px;
+    
+}
+
+
 .form-inline{
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
+    
 }
 
 
@@ -255,8 +274,9 @@ ul{
     font-family: Allerta Stencil;
     font-size: 45px;
     text-align: center;
-    margin-left: 50px;
     color: rgb(16, 120, 129);
+
+    
 }
 .time{
     
@@ -333,6 +353,16 @@ ul{
 
 
 @media screen and (max-width: 500px){
+
+
+    /*============about===============*/
+
+    .photoOfMe{
+        height: 200px;
+        width: 200px; 
+        margin-top: 50px ;
+    }
+
 
 
 /*===================HOME PAGE=====================*/
@@ -413,48 +443,15 @@ ul{
 .footer-container{
 
     width: 100%;
-    min-height: 100px;
     background-color: rgb(0, 0, 0);
     bottom:0;
     left: 0%;
     right: 0%;
     position: relative;
-    margin-top: auto;
     display: flex;
     font-family: Allerta Stencil;
 }
-.intro0{
-    text-align: left;
-    color: white;    
-    margin: 0px 15px;
-    width: 40%;
-   
 
-}
-.intro0 > p{
-    font-weight: lighter;
-    font-size: 10px;
-    width: 100%;
-}
-.intro0 > h4{
-    font-size: 20px;
-}
-.intro0 > a{
-    font-size: 15px;
-}
-
-.intro{
-    text-align: center;
-    color: white;
-    width:25%;
-    display: block;
-}
-.intro > h4{
-    font-size: 20px;
-}
-.intro > h6 {
-    font-size: 10px;
-}
 
 ul{
     list-style: none ;
@@ -462,13 +459,6 @@ ul{
     width: 100%;
     
 }
-
-ul > li{
-    font-size: 10px;
-
-}
-
-
 
 .copyRight{
     bottom:0%;
@@ -482,7 +472,7 @@ ul > li{
     
 }
 .copyRight > p{
-    font-size: 15px;
+    font-size: 10px;
     text-align: left;
     padding-left: 15px;
 }
@@ -496,6 +486,27 @@ ul > li{
 
 
 
+.copyRight{
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+.copyRight >p{
+    text-align: center;
+    font-family: Allerta Stencil;
+}
+.quickLINK >p{
+text-align: center;
+color: white;
+font-size: 15px;
+font-family: Allerta Stencil;
+}
+.quickLINK > pre{
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    font-family: Allerta Stencil;
+    font-size: 10px;
+}
 
 
 
@@ -514,12 +525,13 @@ ul > li{
 .time{
     
     
-    text-align:right;
-    padding-right:30px;  
+    text-align:center;
     font-style:italic;
     background:grey;
     color:white;
-     width:100%;
+    font-size: 15px;
+    margin:0% 0%;
+
 }
 
 .description{
@@ -543,7 +555,7 @@ ul > li{
     font-size: 15px;
     height: auto;
     margin-left:0%;
-    width: 350px;
+    width: 400px;
     
     
 
@@ -561,6 +573,7 @@ ul > li{
 
 .description > label{
     font-size: 15px;
+    
 }
 .name{
 
@@ -576,6 +589,7 @@ ul > li{
             white-space: -pre-wrap;
             white-space: -o-pre-wrap;
             word-wrap: break-word;
+            padding: 8px;
 }
 
 

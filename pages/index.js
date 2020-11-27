@@ -36,12 +36,22 @@ export default function Home({posts}) {
 
 
   return (
-    <div>
+    <div className="bodu">
       <Head>
         <title>Home</title>
       </Head>
 
 <main>
+  <div className="socialMedia" id="socialHandle">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+
+  </div>
+  
     <form className="form-inline">
       <input className="form-control mr-sm-2" type="search" placeholder="Search" />
     </form>

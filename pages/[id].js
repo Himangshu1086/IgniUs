@@ -12,7 +12,7 @@ const PostDetail = ({posts})=>{
 
     return(
         <>
-        <div className="postTitle " >{posts.postTitle}</div>
+        <p className="postTitle " >{posts.postTitle}</p>
         <p className="time">
             created : Time : {posts.createdAt[11]}{posts.createdAt[12]}{posts.createdAt[13]}{posts.createdAt[14]}{posts.createdAt[15]}{posts.createdAt[16]}{posts.createdAt[17]}{posts.createdAt[18]} Date : {posts.createdAt[0]}{posts.createdAt[1]}{posts.createdAt[2]}{posts.createdAt[3]}{posts.createdAt[4]}{posts.createdAt[5]}{posts.createdAt[6]}{posts.createdAt[7]}{posts.createdAt[8]}{posts.createdAt[9]}</p> 
         <div className="postdetail">
