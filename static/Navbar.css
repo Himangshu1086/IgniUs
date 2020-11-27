@@ -470,20 +470,15 @@ ul > li{
 
 
 
-
-
 .copyRight{
-    bottom:0;
+    bottom:0%;
     left: 0%;
     right: 0%;
     position: relative;
-    margin-top: auto;
     text-align: center;
-    font-weight: bold;
     color: white;
     background-color: rgb(75, 75, 75);
-    padding-top: 2px;
-    height: auto;
+    
     
 }
 .copyRight > p{
@@ -498,6 +493,92 @@ ul > li{
     font-size: 10px;
     padding: 3px;
 }
+
+
+
+
+
+
+/*=============dynamic route================*/
+
+
+
+.postTitle {
+    margin-top: 40px;
+    font-family: Allerta Stencil;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(16, 120, 129);
+    margin-left: 0%;
+}
+.time{
+    
+    
+    text-align:right;
+    padding-right:30px;  
+    font-style:italic;
+    background:grey;
+    color:white;
+     width:100%;
+}
+
+.description{
+
+    text-align: end;
+    padding:30px;
+    font-size: 20px;
+    font-family:Allerta Stencil ;
+    margin-right: 10px;
+   
+    
+
+}
+.postdetail{
+   
+   
+    color:rgb(0, 0, 0);
+    text-align: left;
+    padding:20px;
+    font-family: Sofia;
+    font-size: 15px;
+    height: auto;
+    margin-left:0%;
+    width: 350px;
+    
+    
+
+}
+
+.photo{
+
+    margin-right: 0%;
+    justify-content: end;
+    width: 100px;
+    height: 100px;
+   
+    border-radius: 20px;
+}
+
+.description > label{
+    font-size: 15px;
+}
+.name{
+
+    text-align: end;
+    font-size: 10px;
+}
+
+.postInfo{
+
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+}
+
+
 
 
 }
