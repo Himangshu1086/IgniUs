@@ -62,7 +62,9 @@ export default Questions;
 
 
 
-export async function getServerSideProps(){
+
+
+  export async function getStaticProps(){
 
     const res = await fetch(`${baseUrl}/api/askquestion`)
     const questions = await res.json()
@@ -73,19 +75,6 @@ export async function getServerSideProps(){
         }
     }
   }
-
-
-//   export async function getStaticProps(){
-
-//     const res = await fetch(`${baseUrl}/api/askquestion`)
-//     const questions = await res.json()
-//     return{
-  
-//         props:{
-//             questions
-//         }
-//     }
-//   }
 
 
 

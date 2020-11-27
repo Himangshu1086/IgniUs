@@ -66,7 +66,9 @@ export default function Home({posts}) {
 
 
 
-export async function getServerSideProps(){
+
+
+export async function getStaticProps(){
 
   const res = await fetch(`${baseUrl}/api/post`)
   const posts = await res.json()
@@ -77,15 +79,3 @@ export async function getServerSideProps(){
       }
   }
 }
-
-// export async function getStaticProps(){
-
-//   const res = await fetch(`${baseUrl}/api/post`)
-//   const posts = await res.json()
-//   return{
-
-//       props:{
-//           posts
-//       }
-//   }
-// }
