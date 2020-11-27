@@ -1,5 +1,5 @@
 
-const About =()=>{
+const about =()=>{
 
     return(
         <div>
@@ -16,4 +16,4 @@ const About =()=>{
     )
 }
 
-export default About;
+export default about;
