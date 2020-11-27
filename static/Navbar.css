@@ -1,0 +1,319 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*NAVBAR*/
+
+/*===================================================================*/
+.navbar-brand{
+font-size: 25px;
+color: white !important;
+}
+
+.nav-link{
+
+    font-size: 20px;
+    margin-right: 35px;
+    color: white !important;
+}
+
+
+/*===================================================================*/
+
+
+/*FOOTER*/
+
+
+.footer-container{
+
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgb(0, 0, 0);
+    bottom:0;
+    left: 0%;
+    right: 0%;
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    font-family: Allerta Stencil;
+}
+.intro0{
+    text-align: left;
+    color: white;
+    padding: 5px;
+    width: 70%;
+    margin: 10px 10px;
+
+}
+.intro0 > p{
+    width: 50%;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.intro{
+    text-align: center;
+    color: white;
+    width: 30%;
+    padding: 2px;
+    margin: 10px 10px;
+    display: block;
+}
+
+ul{
+    list-style: none ;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.copyRight{
+    bottom:0;
+    left: 0%;
+    right: 0%;
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(75, 75, 75);
+    padding-top: 2px;
+    
+}
+
+.copyRight > label{
+    margin-left: 20px;
+    margin-top: 2px;
+    border: solid white 1px;
+    padding: 3px;
+}
+
+/*===================================================================*/
+
+/* HOME PAGE    */
+
+.form-inline{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+.btn{
+    border-radius: 10px !important;
+    background: rgb(98, 180, 160);
+    color: white;
+}
+.card-group1{
+    margin : 20px 20px;
+    display:flex;
+    flex-wrap: wrap !important;
+    
+    
+    
+}
+
+.card1{
+
+    margin: 30px 20px;
+    height: auto;
+    cursor: pointer;
+    width: 30%;
+    background-color: rgb(199, 207, 207);
+    
+    
+    
+}
+.titleOfPost{
+    background-image: linear-gradient(to bottom right, rgb(31, 98, 93), rgb(126, 192, 181));
+    color: white;
+    margin: 0%;
+    padding: 20px;
+    font-family: Allerta Stencil;
+
+}
+.card-body1{
+    
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+.card-button{
+    padding: 5px;
+
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    background: rgb(7, 105, 97);
+    border-radius: 5px;
+
+    
+}
+
+.post1{
+    padding: 10px 20px;
+    text-align:left;
+    margin-top: 10px;
+}
+
+/*=================================================================*/
+
+/* ASK PAGE  */
+
+.AskLabel{
+
+    font-weight: bold;
+    font-size: 30px;
+    
+    
+}
+.form-control{
+
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    border: black solid 1px;
+}
+
+.submitBtn{
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+    outline: none;
+    cursor: pointer;
+
+}
+.formforask{
+
+    margin-top: 30px;
+}
+
+/*==================================================================*/
+
+/* ABOUT  */
+
+.photoOfMe{
+    height: 330px; 
+    margin-top: 50px ;
+}
+
+.containerforabout{
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+
+/*  features  */
+
+
+.imageOffeatures{
+
+   
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*        =========================================*/
+                       /* DYNAMIC ROUTE */
+
+.postTitle {
+    margin-top: 40px;
+    font-family: Allerta Stencil;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 50px;
+    color: rgb(16, 120, 129);
+}
+.time{
+    
+    
+    text-align:right;
+    padding-right:60px;
+    margin-top:30px;  
+    font-style:italic;
+    background:grey;
+    color:white;
+     width:100%;
+}
+
+.description{
+
+    text-align: end;
+    padding:30px;
+    font-size: 20px;
+    font-family:Allerta Stencil ;
+    margin-right: 10px;
+   
+    
+
+}
+.postdetail{
+   
+   
+    color:rgb(0, 0, 0);
+    text-align: left;
+    padding:20px;
+    margin: 40px 550px;
+    justify-content: center;
+    font-family: Sofia;
+    font-size: 25px;
+    width: 800px;
+    height: auto;
+    
+    
+
+}
+
+.photo{
+
+    margin-right: 0%;
+    justify-content: end;
+    width: 200px;
+    height: 200px;
+   
+    border-radius: 20px;
+}
+
+.name{
+
+    text-align: end;
+    font-size: 20px;
+}
+
+.postInfo{
+
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+}

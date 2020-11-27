@@ -1,65 +1,91 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import baseUrl from '../HELPERS/baseUrl'
 
-export default function Home() {
+export default function Home({posts}) {
+
+
+  const postList = posts.map(post=>{
+
+    return(
+          
+      <Link href="/[id]" as={`/${post._id}`} >
+        <div class="card1">
+            <div className="titleOfPost">
+              <h4 class="card-img-top">{post.postTitle}</h4>
+            </div>
+        
+            <div className="card-body1">
+              <h5>by {post.writerName}</h5>
+              <p>{post.college}</p>
+              <p className="post1" style={{overflow:"hidden" , height:"50px"}}>{post.post}</p>
+              <label  className="card-button"> Read More</label>
+              
+            </div>
+        </div>
+      </Link>     
+    
+    )
+    
+    })
+
+
+
+
+
+
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home</title>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+<main>
+    <form className="form-inline">
+      <input className="form-control mr-sm-2" type="search" placeholder="Search" />
+      <button className="form-control btn" type="submit">Search</button>
+    </form>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <div className="card-group1">
+      {postList}
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      </div>
+    
+        
+    
+        
+</main>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+     
     </div>
   )
 }
+
+
+
+
+
+export async function getServerSideProps(){
+
+  const res = await fetch(`${baseUrl}/api/post`)
+  const posts = await res.json()
+  return{
+
+      props:{
+          posts
+      }
+  }
+}
+
+// export async function getStaticProps(){
+
+//   const res = await fetch(`${baseUrl}/api/post`)
+//   const posts = await res.json()
+//   return{
+
+//       props:{
+//           posts
+//       }
+//   }
+// }
