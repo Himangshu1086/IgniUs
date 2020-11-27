@@ -15,7 +15,7 @@ const Login =()=>{
     const handleSubmits = async (e)=>{
 
         e.preventDefault();
-        const res = await fetch(`${baseUrl}/api/login` ,{
+        const res = await fetch(`https://cors/anywhere.herokuapp.com/${baseUrl}/api/login` ,{
             method:"POST" ,
             headers:{
                 "Content-Type":"application/json"
