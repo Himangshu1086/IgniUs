@@ -62,20 +62,7 @@ export default Questions;
 
 
 
-// export async function getServerSideProps(){
-
-//     const res = await fetch(`${baseUrl}/api/askquestion`)
-//     const questions = await res.json()
-//     return{
-  
-//         props:{
-//             questions
-//         }
-//     }
-//   }
-
-
-  export async function getStaticProps(){
+export async function getServerSideProps(){
 
     const res = await fetch(`${baseUrl}/api/askquestion`)
     const questions = await res.json()
@@ -86,6 +73,19 @@ export default Questions;
         }
     }
   }
+
+
+//   export async function getStaticProps(){
+
+//     const res = await fetch(`${baseUrl}/api/askquestion`)
+//     const questions = await res.json()
+//     return{
+  
+//         props:{
+//             questions
+//         }
+//     }
+//   }
 
 
 
