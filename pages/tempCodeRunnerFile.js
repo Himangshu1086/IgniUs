@@ -1,2 +1,0 @@
-<h5>B TECH 2ND YEAR<br/> NATIONAL INSTITUTE OF TECHNOLOGY , KARNATAKA , SURATHKAL<br/> 2019-2023</h5>
-            <p>Cotton college 2016-2018 batch</p>
