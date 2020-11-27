@@ -6,7 +6,7 @@ import baseUrl from '../HELPERS/baseUrl'
 
 
 
-const PostDetail = ({posts , post1})=>{
+const PostDetail = ({posts})=>{
 
 
 
