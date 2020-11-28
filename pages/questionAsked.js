@@ -26,8 +26,6 @@ const Questions = ({questions})=>{
              }
         }
 
-
-
         return(
             
             <div style={{background:"lightblue" , textAlign:"center" , margin:"30px 30px" ,fontFamily:"Allerta Stencil"}} >
@@ -69,7 +67,7 @@ export async function getServerSideProps(){
     return{
   
         props:{
-            questions
+            questions:questions
         }
     }
   }

@@ -42,6 +42,7 @@ const Ask =()=>{
     return(
         <>
             <div className="container">
+                
                 <form className="formforask" onSubmit={(e)=>handleSubmitQuestion(e)} >
                     <input  className="form-control" required type="text" 
                     placeholder="Enter your name"
@@ -54,7 +55,10 @@ const Ask =()=>{
                      placeholder="email@example.com"
                      name="Email"  
                      value={Email} 
-                     onChange={(e)=>{setEmail(e.target.value)}} /><br/>
+                     onChange={(e)=>{setEmail(e.target.value)
+                     document.getElementById("abc").style.display="flex";
+                     }} /><br/>
+                     <p style={{textAlign:"center" , background:"red" , color:"white" ,borderRadius:"20px", display:"none"}} id="abc">please enter your email correctly to get the answer through emails.</p>
 
                     <br/><br/>
                     <label className="AskLabel" for="exampleFormControlTextarea1">ASK QUESTION : </label>
