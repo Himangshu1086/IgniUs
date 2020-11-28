@@ -16,7 +16,7 @@ export default function Home({posts}) {
             </div>
         
             <div className="card-body1">
-              <h5>by {post.writerName}</h5>
+              <h5><i class="fa fa-user "></i>{post.writerName}</h5>
               <p>{post.college}</p>
               <p className="post1" style={{overflow:"hidden" , height:"50px"}}>{post.post}</p>
               <label  className="card-button"> Read More</label>

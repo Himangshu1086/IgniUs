@@ -6,15 +6,16 @@ import baseUrl from '../HELPERS/baseUrl'
 
 
 
-const PostDetail = ({posts})=>{
+const PostDetail = ({posts , allposts})=>{
 
 
 
     return(
         <>
-        <p className="postTitle " >{posts.postTitle}</p>
+        <p>{allposts.postTitle}</p>
+        <p className="postTitle" >{posts.postTitle}</p>
         <p className="time">
-            created : Time : {posts.createdAt[11]}{posts.createdAt[12]}{posts.createdAt[13]}{posts.createdAt[14]}{posts.createdAt[15]}{posts.createdAt[16]}{posts.createdAt[17]}{posts.createdAt[18]} Date : {posts.createdAt[0]}{posts.createdAt[1]}{posts.createdAt[2]}{posts.createdAt[3]}{posts.createdAt[4]}{posts.createdAt[5]}{posts.createdAt[6]}{posts.createdAt[7]}{posts.createdAt[8]}{posts.createdAt[9]}</p> 
+            created :{posts.smallPost}</p> 
         <div className="postdetail">
         <pre className="postInfo">{posts.post}</pre>
         <div className="description" >
@@ -34,19 +35,48 @@ const PostDetail = ({posts})=>{
 
 
 
-export async function getServerSideProps({params : {id}}) {
+// export async function getServerSideProps({params : {id}}) {
+
+//     const res = await fetch(`${baseUrl}/api/${id}`);
+   
+//     const data = await res.json();
+    
+//     return {
+//       props: {
+//           posts :data 
+        
+//         }
+//     }
+//   }
+
+
+
+
+  export async function getStaticProps({params : {id}}) {
 
     const res = await fetch(`${baseUrl}/api/${id}`);
    
     const data = await res.json();
+    const res1 = await fetch(`${baseUrl}/api/post`)
+    const questions = await res1.json()
     
     return {
       props: {
-          posts :data 
-        
+          posts :data ,
+        allposts:questions
         }
     }
   }
+
+export async function getStaticPaths(){
+    const res = await fetch(`${baseUrl}/api/post`);
+    const posts = await res.json()
+    const paths = posts.map((post) => ({
+        params: { id: post._id },
+      }))
+      return { paths, fallback: false }
+} 
+
 
 
 

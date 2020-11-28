@@ -31,7 +31,7 @@ const Navbar =()=>{
             {admin ? 
 
             <>
-                <Link  href="/questionAsked"><a className="nav-item nav-link" >AskedQuestion</a></Link>
+                <Link  href="/questionAsked"><a className="nav-item nav-link" id="NAB" >AskedQuestion</a></Link>
                 <Link  href="/createPost"><a className="nav-item nav-link" >CreatePost</a></Link>
                 <Link href="/ask"><a className="nav-item nav-link" >Ask<span class="sr-only">(current)</span></a></Link>
                 <Link href="/features"><a className="nav-item nav-link" >Features</a></Link>

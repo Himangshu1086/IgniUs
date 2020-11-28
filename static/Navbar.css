@@ -26,13 +26,18 @@ font-size: 25px;
 color: rgb(255, 255, 255) !important;
 }
 
-.nav-link.nav-link{
+.nav-link{
 
     font-size: 20px;
     margin-right: 35px;
     color: rgb(255, 255, 255) !important;
+
+
 }
 
+.nav-link:hover{
+    background-color: rgb(39, 39, 39);
+}
 .navbar-toggler{
     outline: none !important;
 }
@@ -42,7 +47,6 @@ color: rgb(255, 255, 255) !important;
     top: 0 !important;
     width: 100%;
     background:black !important;
-    transition: top 0.3s;
 }
 
 /*===================================================================*/
@@ -159,10 +163,16 @@ a{
     width: 30%;
     border-radius: 25px;
     background-color: rgb(199, 207, 207);
+    transition: 0.3s;
     
     
     
 }
+.card1:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 10px;
+  }
+
 .titleOfPost{
     background-image: linear-gradient(to bottom right, rgb(31, 98, 93), rgb(126, 192, 181));
     color: white;
@@ -342,6 +352,7 @@ a{
             white-space: -pre-wrap;
             white-space: -o-pre-wrap;
             word-wrap: break-word;
+            font-family: Adamina;
 }
 
 
@@ -393,10 +404,16 @@ a{
         width: 100%;
         border-radius: 25px;
         background-color: rgb(199, 207, 207);
+        transition: 0.3s;
         
         
         
     }
+
+    .card1:hover {
+        transform: scale(1.05);
+        box-shadow: 5px 10px;
+      }
     .titleOfPost{
         background-image: linear-gradient(to bottom right, rgb(31, 98, 93), rgb(126, 192, 181));
         color: white;
@@ -592,7 +609,16 @@ font-family: Allerta Stencil;
             padding: 8px;
 }
 
+/*=========================nabvar===========================*/
+.nav-link{
 
+    font-size: 15px;
+
+}
 
 
 }
+
+
+
+

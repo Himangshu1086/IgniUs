@@ -14,7 +14,7 @@ const layout = ({children})=>{
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../static/Navbar.css"/>
         <link rel="stylesheet" href="../static/navbar.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'></link>
+        <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>

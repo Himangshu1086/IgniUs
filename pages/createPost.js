@@ -76,12 +76,12 @@ const imageUpload = async ()=>{
                     name="writerName" value={writerName} 
                     onChange={(e)=>{setwriterName(e.target.value)}} /><br/>
 
-                    <input className="form-control"   required type="text" placeholder="College"
+                    <input className="form-control"   required type="text" placeholder="present College"
                     name="college" value={college} 
                     onChange={(e)=>{setcollege(e.target.value)}}/><br/>
 
 
-                    <input className="form-control" type="text" placeholder="JEEAdvanced "
+                    <input className="form-control" type="text" placeholder="JEEAdvanced rank "
                     name="JEEAdvanced " value={JEEAdvanced} 
                     onChange={(e)=>{setJEEAdvanced(e.target.value)}}/><br/>
 
@@ -113,14 +113,14 @@ const imageUpload = async ()=>{
 
 
             
-                    <input className="form-control"  type="text" placeholder="JEEMains"
+                    <input className="form-control"  type="text" placeholder="JEEMains percentile"
                     name="JEEMains" value={JEEMains} 
                     onChange={(e)=>{setJEEMains(e.target.value)}}
                     /><br/>
 
 
-                    <input className="form-control" type="text" placeholder="showPost"
-                    name="smallPost" value={smallPost} 
+                    <input className="form-control" type="text" placeholder=" Date: example : November 28 , Monday , 12:30 a.m "
+                    name="smallPost" value={smallPost} required
                     onChange={(e)=>{setsmallPost(e.target.value)}}
                     /><br/>
                     <br/><br/>
@@ -129,7 +129,7 @@ const imageUpload = async ()=>{
 
 
                     <label className="AskLabel" for="exampleFormControlTextarea1">TITLE :</label>
-                    <textarea required autoFocus className="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <textarea required  className="form-control" id="exampleFormControlTextarea1" rows="3"
                      name="postTitle" value={postTitle} 
                      onChange={(e)=>{setpostTitle(e.target.value)}}
                         style={{width:"750px"}}
@@ -137,7 +137,7 @@ const imageUpload = async ()=>{
 
 
                     <label className="AskLabel" autoFocus for="exampleFormControlTextarea1">POST : </label>
-                    <textarea  required  autoFocus className="form-control" id="exampleFormControlTextarea1" rows="7"
+                    <textarea  required   className="form-control" id="exampleFormControlTextarea1" rows="7"
                     name="post " value={post } 
                     onChange={(e)=>{setpost (e.target.value)}}
                         style={{width:"750px"}}
