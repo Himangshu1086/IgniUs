@@ -45,7 +45,7 @@ const Login =()=>{
 
     return(
         <>
-             <div className="container" style={{border:"black solid 2px" , marginTop:"120px"}}>
+             <div className="containers" style={{marginTop:"120px" }}>
              <h1 className="AskLabel" style={{textAlign:"center !important", marginTop:"50px"}}>LOGIN </h1>
                 <form className="formforask" onSubmit={(e)=>handleSubmits(e)} >
                     <input  className="form-control" required type="text" 

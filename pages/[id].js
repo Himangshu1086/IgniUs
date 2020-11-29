@@ -13,10 +13,10 @@ const PostDetail = ({posts , allposts})=>{
     return(
         <>
         <p>{allposts.postTitle}</p>
-        <p className="postTitle" >{posts.postTitle}</p>
-        <p className="time">
-            created :{posts.smallPost}</p> 
+        <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p></p>
+         
         <div className="postdetail">
+        
         <pre className="postInfo">{posts.post}</pre>
         <div className="description" >
         <img className="photo" src={posts.imageUrl}/><br/><br/>

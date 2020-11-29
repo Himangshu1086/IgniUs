@@ -72,7 +72,7 @@ const imageUpload = async ()=>{
            <div className="container" onSubmit={(e)=>handleSubmit(e)}>
            <label className="AskLabel">ADMIN PANEL :</label>
                 <form className="formforask"  >
-                    <input  className="form-control" required type="text" placeholder="WRITER NAME" 
+                    <input  className="form-control" required autoFocus type="text" placeholder="WRITER NAME" 
                     name="writerName" value={writerName} 
                     onChange={(e)=>{setwriterName(e.target.value)}} /><br/>
 
@@ -132,15 +132,14 @@ const imageUpload = async ()=>{
                     <textarea required  className="form-control" id="exampleFormControlTextarea1" rows="3"
                      name="postTitle" value={postTitle} 
                      onChange={(e)=>{setpostTitle(e.target.value)}}
-                        style={{width:"750px"}}
-                    >3</textarea><br/>
+                    ></textarea><br/>
 
 
                     <label className="AskLabel" autoFocus for="exampleFormControlTextarea1">POST : </label>
                     <textarea  required   className="form-control" id="exampleFormControlTextarea1" rows="7"
                     name="post " value={post } 
                     onChange={(e)=>{setpost (e.target.value)}}
-                        style={{width:"750px"}}
+                        
                     ></textarea><br/>
                     <input className="submitBtn" type="submit" />
 

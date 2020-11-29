@@ -1,11 +1,20 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState } from 'react'
 import baseUrl from '../HELPERS/baseUrl'
 
 export default function Home({posts}) {
 
+const [searchTerm , setsearchTerm] = useState("");
 
-  const postList = posts.map(post=>{
+  const postList = posts.filter((post)=>{
+    if (searchTerm == ""){
+      return post
+    }
+    else if(post.posts.postTitle.toLowerCase().includes(searchTerm.toLowerCase())){
+      return post
+    }
+  }).map(post=>{
 
     return(
           
@@ -53,7 +62,12 @@ export default function Home({posts}) {
   </div>
   
     <form className="form-inline">
-      <input className="form-control mr-sm-2" type="search" placeholder="Search" />
+      <input className="form-control mr-sm-2" type="text"
+      value={searchTerm}
+      onChange={(e)=>{
+        setsearchTerm(e.target.value);
+      }}
+       placeholder="Search" />
     </form>
 
       <div className="card-group1">

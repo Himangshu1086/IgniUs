@@ -41,10 +41,10 @@ const Ask =()=>{
 
     return(
         <>
-            <div className="container">
+            <div className="bodu" >
                 
                 <form className="formforask" onSubmit={(e)=>handleSubmitQuestion(e)} >
-                    <input  className="form-control" required type="text" 
+                    <input  className="form-control" required  autoFocus type="text" 
                     placeholder="Enter your name"
                     name="userName"
                     value={userName}
@@ -62,7 +62,7 @@ const Ask =()=>{
 
                     <br/><br/>
                     <label className="AskLabel" for="exampleFormControlTextarea1">ASK QUESTION : </label>
-                    <textarea  required autoFocus className="form-control"
+                    <textarea  required className="form-control"
                      id="exampleFormControlTextarea1" rows="3"
                      name="Questions" 
                      value={Questions}
@@ -75,7 +75,7 @@ const Ask =()=>{
 
                 </form>
             </div>
-            <div style={{marginTop:"230px"}}></div>
+            <div style={{marginTop:"350px"}}></div>
         </>
     )
 }
