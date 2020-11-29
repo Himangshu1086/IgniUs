@@ -11,7 +11,7 @@ const PostDetail = ({posts , allposts})=>{
 
 
     return(
-        <>
+        <div className="bodu">
         <p>{allposts.postTitle}</p>
         <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p></p>
          
@@ -29,7 +29,7 @@ const PostDetail = ({posts , allposts})=>{
 
         </div>
         </div>
-        </>
+        </div>
     )
 }
 
