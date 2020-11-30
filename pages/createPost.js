@@ -3,10 +3,23 @@ import {useState} from 'react'
 import { useRouter } from 'next/router'
 import baseUrl from '../HELPERS/baseUrl'
 import {parseCookies} from 'nookies'
+import Head from 'next/head'
+
+
 
 
 
 const createPost = ()=>{
+
+
+    const {token} = parseCookies();
+    let admin = false;
+    if(token){
+        admin = true
+    }
+    else{
+        admin = false
+    }
 
 
 
@@ -67,8 +80,25 @@ const imageUpload = async ()=>{
     return res2.url
 }
 
+
+if(process.browser){        
+   
+  
+    }
+   
+
+    
+
     return(
         <>
+        <Head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link rel="stylesheet" href="/richtext.min.css"/>
+        </Head>
+        <div className="bodu">
+         {admin ?<><div style={{marginTop:"120px" }}></div></>:<></>}
+
            <div className="container" onSubmit={(e)=>handleSubmit(e)}>
            <label className="AskLabel">ADMIN PANEL :</label>
                 <form className="formforask"  >
@@ -135,12 +165,34 @@ const imageUpload = async ()=>{
                     ></textarea><br/>
 
 
-                    <label className="AskLabel" autoFocus for="exampleFormControlTextarea1">POST : </label>
-                    <textarea  required   className="form-control" id="exampleFormControlTextarea1" rows="7"
-                    name="post " value={post } 
+                    <label className="AskLabel" autoFocus for="output">POST : 
+                    </label>
+                    <p>
+                        
+                        HEADING : # H1 ## H2 ### H3<br/>
+                        Blockquote : left opening arrow space blockquote<br/>
+                        BOLD : **bold**<br/>
+                        italic : *italic*<br/>
+                        orderedList :   1. first<br/>
+                                        1. second<br/>
+                                        1. third<br/>
+                        unorderedList : - first<br/>
+                                        - second<br/>
+                                        - third<br/>
+                        code        : `code`<br/>
+                        horizontal rule : ---<br/>
+                        Link  : [title](https://www.google.com)<br/>
+                        newline : \<br/>
+                        stroke through : <s></s><br/>
+
+                    </p>
+
+                    <textarea  required  className="form-control abc" id="output" rows="7"
+                    name="post" value={post} 
                     onChange={(e)=>{setpost (e.target.value)}}
                         
-                    ></textarea><br/>
+                    >     
+                    </textarea><br/>
                     <input className="submitBtn" type="submit" />
 
                     
@@ -148,6 +200,7 @@ const imageUpload = async ()=>{
                 </form>
             </div>
             <br/><br/>
+        </div>
         </>
     )
 }

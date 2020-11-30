@@ -2,20 +2,21 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import baseUrl from '../HELPERS/baseUrl'
+import {parseCookies} from 'nookies'
+import ReactMarkdown from 'react-markdown'
+
+
 
 export default function Home({posts}) {
 
 const [searchTerm , setsearchTerm] = useState("");
 
-  const postList = posts.filter((post)=>{
-    if (searchTerm == ""){
-      return post
-    }
-    else if(post.posts.postTitle.toLowerCase().includes(searchTerm.toLowerCase())){
-      return post
-    }
-  }).map(post=>{
 
+
+
+  const postList = posts.map(post=>{
+
+    const input = `${post.post}`;
     return(
           
       <Link href="/[id]" as={`/${post._id}`} >
@@ -27,8 +28,11 @@ const [searchTerm , setsearchTerm] = useState("");
             <div className="card-body1">
               <h5><i class="fa fa-user "></i>{post.writerName}</h5>
               <p>{post.college}</p>
-              <p className="post1" style={{overflow:"hidden" , height:"50px"}}>{post.post}</p>
-              <label  className="card-button"> Read More</label>
+              <ReactMarkdown className="post1" >
+              {input}
+              </ReactMarkdown>
+              
+              <label  className="card-button" style={{marginTop:"20px"}}> Read More</label>
               
             </div>
         </div>
@@ -38,6 +42,14 @@ const [searchTerm , setsearchTerm] = useState("");
     
     })
 
+    const {token} = parseCookies();
+    let admin = false;
+    if(token){
+        admin = true
+    }
+    else{
+        admin = false
+    }
 
 
 
@@ -51,7 +63,16 @@ const [searchTerm , setsearchTerm] = useState("");
       </Head>
 
 <main>
-  <div className="socialMedia" id="socialHandle">
+  {admin ?
+  <>
+    <div style={{marginTop:"120px" }}>
+    </div>
+  </>
+  :
+  <>
+  </>  
+}
+  {/* <div className="socialMedia" id="socialHandle">
   <a href="#" class="fa fa-facebook"></a>
   <a href="#" class="fa fa-twitter"></a>
   <a href="#" class="fa fa-google"></a>
@@ -59,7 +80,7 @@ const [searchTerm , setsearchTerm] = useState("");
   <a href="#" class="fa fa-youtube"></a>
   <a href="#" class="fa fa-instagram"></a>
 
-  </div>
+  </div> */}
   
     <form className="form-inline">
       <input className="form-control mr-sm-2" type="text"

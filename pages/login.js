@@ -45,7 +45,7 @@ const Login =()=>{
 
     return(
         <>
-             <div className="containers" style={{marginTop:"120px" }}>
+             <div className="bodu" style={{paddingTop:"220px" , padding:"200px 40px"}}>
              <h1 className="AskLabel" style={{textAlign:"center !important", marginTop:"50px"}}>LOGIN </h1>
                 <form className="formforask" onSubmit={(e)=>handleSubmits(e)} >
                     <input  className="form-control" required type="text" 

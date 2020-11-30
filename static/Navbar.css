@@ -205,9 +205,11 @@ a{
 }
 
 .post1{
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-align:left;
     margin-top: 10px;
+    overflow:hidden;
+    height:90px;
 }
 
 
@@ -375,6 +377,10 @@ a{
 
 
 @media screen and (max-width: 800px){
+
+
+/*==================ask=======================*/
+
 
 
     /*============about===============*/
@@ -586,12 +592,12 @@ font-family: Allerta Stencil;
    
     color:rgb(0, 0, 0);
     text-align: left;
-    padding:20px;
+    padding:10px;
     font-family: Sofia;
     font-size: 15px;
     height: auto;
     margin-left:0%;
-    width: 385px;
+    width: 380px;
     
     
 

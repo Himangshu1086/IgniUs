@@ -2,23 +2,23 @@ import Link from 'next/link'
 import {useState} from 'react'
 import { useRouter } from 'next/router'
 import baseUrl from '../HELPERS/baseUrl'
+import ReactMarkdown from 'react-markdown'
 
 
 
-
-const PostDetail = ({posts , allposts})=>{
-
-
+const PostDetail = ({posts})=>{
+    
+  const input = `${posts.post}`;
 
     return(
         <div className="bodu">
-        <p>{allposts.postTitle}</p>
         <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p></p>
          
         <div className="postdetail">
-        
-        <pre className="postInfo">{posts.post}</pre>
+        <ReactMarkdown className="postInfo">{input}</ReactMarkdown>
+        {/*<pre className="postInfo">{posts.post}</pre>*/}
         <div className="description" >
+    
         <img className="photo" src={posts.imageUrl}/><br/><br/>
         <label >{posts.writerName}</label><br/>
         <label >{posts.college}</label><br/>

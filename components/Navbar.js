@@ -26,6 +26,7 @@ const Navbar =()=>{
     }
 
     return(
+        <>
         <div className="box-for-header" >
 
             <nav className="NAVBAR-division" >
@@ -57,18 +58,16 @@ const Navbar =()=>{
                     <Link  href="/nitk"><div className="quick-link " id={isActive("/nitk")} >NITK</div></Link>
                     <Link  href="/jee"><div className="quick-link " id={isActive("/jee")} >JEE</div></Link>
                     <Link  href="/neet"><div className="quick-link " id={isActive("/neet")} >NEET</div></Link>
-                    <Link  href="/ncertClass9"><div className="quick-link " id={isActive("/ncertClass9")} >Class9Ncert</div></Link>
-                    <Link  href="/assameseClass9"><div className="quick-link " id={isActive("/assameseClass9")} >Class9Assamese</div></Link>
+                    <Link  href="/ncertClass9"><div className="quick-link " id={isActive("/ncertClass9")} >Class9</div></Link>
                     <Link  href="/advancedMaths"><div className="quick-link " id={isActive("/advancedMaths")} >AdvancedMaths</div></Link>
-                    <Link  href="/ncertClass10"><div className="quick-link " id={isActive("/ncertClass10")} >Class10Ncert</div></Link>
-                    <Link  href="/assameseClass10"><div className="quick-link " id={isActive("/assameseClass10")} >Class10Assamese</div></Link>
-                    <Link  href="/ncertClass11"><div className="quick-link " id={isActive("/ncertClass11")} >Class11Ncert</div></Link>
-                    <Link  href="/assameseClass11"><div className="quick-link " id={isActive("/assameseClass11")} >Class11Assamese</div></Link>
-                    <Link  href="/ncertClass12"><div className="quick-link " id={isActive("/ncertClass12")} >Class12Ncert</div></Link>
-                    <Link  href="/assameseClass12"><div className="quick-link " id={isActive("/assameseClass12")} >Class12Assamese</div></Link>          
+                    <Link  href="/ncertClass10"><div className="quick-link " id={isActive("/ncertClass10")} >Class10</div></Link>
+                    <Link  href="/ncertClass11"><div className="quick-link " id={isActive("/ncertClass11")} >Class11</div></Link>
+                    <Link  href="/ncertClass12"><div className="quick-link " id={isActive("/ncertClass12")} >Class12</div></Link>
+                            
             </nav>
 
         </div>
+        </>
     )
 }
 

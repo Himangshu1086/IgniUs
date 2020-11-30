@@ -1,10 +1,19 @@
 import baseUrl from '../HELPERS/baseUrl'
 import {useRouter} from 'next/router'
-
+import {parseCookies} from 'nookies'
 
 
 
 const Questions = ({questions})=>{
+
+    const {token} = parseCookies();
+    let admin = false;
+    if(token){
+        admin = true
+    }
+    else{
+        admin = false
+    }
 
     const allQuestions = questions.map(question=>{
 
@@ -26,9 +35,14 @@ const Questions = ({questions})=>{
              }
         }
 
+
+
+       
+    
         return(
             
-            <div style={{background:"lightblue" , textAlign:"center" , margin:"30px 30px" ,fontFamily:"Allerta Stencil"}} >
+
+            <div  style={{background:"lightblue" , textAlign:"center" , margin:"30px 30px" ,fontFamily:"Allerta Stencil"}} >
                  
                     <p>NAME : {question.userName}<br/>
                 
@@ -41,15 +55,25 @@ const Questions = ({questions})=>{
        >DELETE</button>
             </div>
             
+            
         )
     })
 
     
     
     return(
-        <>
+        <div className="bodu">
+        {admin ?
+                <>
+                    <div style={{marginTop:"120px" }}>
+                    </div>
+                </>
+                :
+                <>
+            </> 
+            }
             {allQuestions}
-        </>
+        </div>
     )
 }
 

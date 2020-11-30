@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
 
+
 const layout = ({children})=>{
 
         return(
@@ -20,13 +21,25 @@ const layout = ({children})=>{
         <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        
+        
+
         </Head>
         <main>
         <NavBar/>
         {children}
                 <Footer/>
+
+
+
                 </main>
+        
+        
+        
+        
         </>
+
+
 
         )
 
