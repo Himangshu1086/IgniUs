@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import baseUrl from '../HELPERS/baseUrl'
 import {parseCookies} from 'nookies'
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 
@@ -186,6 +187,8 @@ if(process.browser){
                         stroke through : <s></s><br/>
 
                     </p>
+
+                    <Link href="https://dillinger.io/"><h1 style={{cursor:"pointer"}}><a>CLICK HERE : MARKDOWN EDITOR TO WRITE POST</a></h1></Link>
 
                     <textarea  required  className="form-control abc" id="output" rows="7"
                     name="post" value={post} 
