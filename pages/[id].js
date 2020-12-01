@@ -22,9 +22,9 @@ const PostDetail = ({posts})=>{
         <img className="photo" src={posts.imageUrl}/><br/><br/>
         <label >{posts.writerName}</label><br/>
         <label >{posts.college}</label><br/>
-        <label >{posts.branch}</label><br/>
         <label >Jee Mains : {posts.JEEMains}</label><br/>
-        <label >Jee Advanced : {posts.JEEAdvanced}</label><br/>
+        <label >{posts.branch}</label><br/>
+        <label >{posts.JEEAdvanced}</label><br/>
         
 
         </div>

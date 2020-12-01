@@ -16,10 +16,13 @@ const [searchTerm , setsearchTerm] = useState("");
 
   const postList = posts.map(post=>{
 
-    const input = `${post.post}`;
+    const input = `${post.post}`; 
+
+    
+    if(process.browser){const url = document.location.href;}
     return(
           
-      <Link href="/[id]" as={`/${post._id}`} >
+      
         <div class="card1">
             <div className="titleOfPost">
               <h4 class="card-img-top">{post.postTitle}</h4>
@@ -31,13 +34,18 @@ const [searchTerm , setsearchTerm] = useState("");
               <ReactMarkdown className="post1" >
               {input}
               </ReactMarkdown>
+              <Link href="/[id]" as={`/${post._id}`} ><label  className="card-button" style={{marginTop:"20px"}}> Read More</label></Link>
               
-              <label  className="card-button" style={{marginTop:"20px"}}> Read More</label>
+              
+              
               
             </div>
-        </div>
-      </Link>     
-    
+            <div className="icon-container">
+                <Link href={`https://api.whatsapp.com/send?text=${post.postTitle}igni-us.vercel.app/${post._id}`}><i className="fa fa-whatsapp icon" style={{fontSize:"20px"}} aria-hidden="true"></i></Link>
+                <Link href={`https://www.facebook.com/sharer.php?u=igni-us.vercel.app/${post._id}`}><i class="fa fa-facebook icon" style={{fontSize:"20px"}} aria-hidden="true"></i></Link>
+              </div>
+            
+            </div>
     )
     
     })
