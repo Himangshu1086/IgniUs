@@ -1,6 +1,6 @@
 #active{
   border-bottom: 7px solid #0c3553;
-  border-radius: 10px;
+  border-radius: 10px ;
 }
 
 
@@ -82,7 +82,7 @@
   display: flex;
   overflow:auto;
   justify-content: center; 
-  background-color: rgb(240, 239, 239);
+  background-color:white;
   
   
 }
@@ -194,6 +194,7 @@
     margin:0;
     justify-content: left;
     background-color: white;
+    
   }
   
  
