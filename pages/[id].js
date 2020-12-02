@@ -35,47 +35,47 @@ const PostDetail = ({posts})=>{
 
 
 
-// export async function getServerSideProps({params : {id}}) {
-
-//     const res = await fetch(`${baseUrl}/api/${id}`);
-   
-//     const data = await res.json();
-    
-//     return {
-//       props: {
-//           posts :data 
-        
-//         }
-//     }
-//   }
-
-
-
-
-  export async function getStaticProps({params : {id}}) {
+export async function getServerSideProps({params : {id}}) {
 
     const res = await fetch(`${baseUrl}/api/${id}`);
    
     const data = await res.json();
-    const res1 = await fetch(`${baseUrl}/api/post`)
-    const questions = await res1.json()
     
     return {
       props: {
-          posts :data ,
-        allposts:questions
+          posts :data 
+        
         }
     }
   }
 
-export async function getStaticPaths(){
-    const res = await fetch(`${baseUrl}/api/post`);
-    const posts = await res.json()
-    const paths = posts.map((post) => ({
-        params: { id: post._id },
-      }))
-      return { paths, fallback: false }
-} 
+
+
+
+//   export async function getStaticProps({params : {id}}) {
+
+//     const res = await fetch(`${baseUrl}/api/${id}`);
+   
+//     const data = await res.json();
+//     const res1 = await fetch(`${baseUrl}/api/post`)
+//     const questions = await res1.json()
+    
+//     return {
+//       props: {
+//           posts :data ,
+//         allposts:questions
+//         }
+//     }
+//   }
+
+// export async function getStaticPaths(){
+//     const res = await fetch(`${baseUrl}/api/post`);
+//     const posts = await res.json()
+//     const paths = posts.map((post) => ({
+//         params: { id: post._id },
+//       }))
+//       return { paths, fallback: false }
+// } 
 
 
 
