@@ -18,8 +18,6 @@ const [searchTerm , setsearchTerm] = useState("");
 
     const input = `${post.post}`; 
 
-    
-    if(process.browser){const url = document.location.href;}
     return(
           
       

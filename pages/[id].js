@@ -16,7 +16,6 @@ const PostDetail = ({posts})=>{
          
         <div className="postdetail">
         <ReactMarkdown className="postInfo">{input}</ReactMarkdown>
-        {/*<pre className="postInfo">{posts.post}</pre>*/}
         <div className="description" >
     
         <img className="photo" src={posts.imageUrl}/><br/><br/>
