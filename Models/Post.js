@@ -1,5 +1,4 @@
 import mongoose from 'mongoose'
-import marked from 'marked'
 const postsSchema  = new mongoose.Schema({
 
     writerName :{

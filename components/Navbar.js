@@ -55,7 +55,7 @@ const Navbar =()=>{
             </nav>
             <div className="quick-link-display" style={{display:"flex"}}>
             <nav className="NAVBAR-division-2" >
-                    <Link  href="/quickLink/nitk"><div className="quick-link " id={isActive("/quickLink/nitk")} >NITK</div></Link>
+                    <Link  href="/nitk"><div className="quick-link " id={isActive("/nitk")} >NITK</div></Link>
                     <Link  href="/quickLink/jee"><div className="quick-link " id={isActive("/quickLink/jee")} >JEE</div></Link>
                     <Link  href="/quickLink/neet"><div className="quick-link " id={isActive("/quickLink/neet")} >NEET</div></Link>
                     <Link  href="/quickLink/advancedMaths"><div className="quick-link " id={isActive("/quickLink/advancedMaths")} >AdvancedMaths</div></Link>

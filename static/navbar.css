@@ -141,7 +141,7 @@
   .NAVBAR-division-1{
     background-color: #125688;
     display: flex;
-    justify-content: center;
+    justify-content:left;
     color:white;
   
   }

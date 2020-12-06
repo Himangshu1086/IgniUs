@@ -12,9 +12,23 @@ export default function Home({posts}) {
 const [searchTerm , setsearchTerm] = useState("");
 
 
+const POSTS = posts.sort(function(a, b) {
+  var nameA = a.createdAt.toUpperCase(); // ignore upper and lowercase
+  var nameB = b.createdAt.toUpperCase(); // ignore upper and lowercase
+  if (nameA < nameB) {
+    return 1;
+  }
+  if (nameA > nameB) {
+    return -1;
+  }
+
+  // names must be equal
+  return 0;
+});
 
 
-  const postList = posts.map(post=>{
+
+  const postList = POSTS.map(post=>{
 
     const input = `${post.post}`; 
 
