@@ -23,7 +23,7 @@ const{branch , year , course , post } = router.query;
                                     return(
                                         <>
                                         <div className="bodu">
-                                            <p className="postTitle" >{po.title}<p className="time">posts.smallPost</p></p>
+                                            <p className="postTitle" >{po.title}<p className="time">{po.date}</p></p>
                                             
                                             <div className="postdetail">
                                             <ReactMarkdown className="postInfo">{input}</ReactMarkdown>

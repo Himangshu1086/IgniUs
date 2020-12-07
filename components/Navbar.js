@@ -42,7 +42,7 @@ const Navbar =()=>{
 
                     <>
                         <Link  href="/questionAsked"><div className="quick-link" id={isActive("/questionAsked")} >AskedQuestion</div></Link>
-                        <Link  href="/createPost"><div  className="quick-link " id={isActive("/createPost")} >CreatePost</div></Link>
+                        <Link  href="/ADMIN"><div  className="quick-link " id={isActive("/createPost")} >ADMIN</div></Link>
                         <Link href="/login"><div className="quick-link"id={isActive("/login")} onClick={()=>{
                                     cookie.remove('token')
                                     router.push("/login")

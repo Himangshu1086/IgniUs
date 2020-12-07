@@ -22,9 +22,9 @@ const NITK = ({courses})=>{
                             return(
                                     <>
                                         <Link href ={`/nitk/${branch}/${year}/${cr.coursename}`} >  
-                                            <div className="branch-card" style={{border:"solid 2px red",height:"150px"}}>
+                                            <div className="branch-card" style={{height:"150px"}}>
                                                 <div className="branch-photo-and-name">
-                                                    <p style={{fontSize:"30px" , paddingTop:"33px"}}>{cr.coursename}</p>
+                                                    <p style={{fontSize:"30px" }}>{cr.coursename}</p>
                                                 </div>
                                             </div>
                                         </Link>
@@ -41,14 +41,12 @@ const NITK = ({courses})=>{
 
 
     return(
-        <>
-        <div style={{paddingTop:"200px"}}></div>
-        <h3 style={{textAlign:"center",padding:"20px"}}>LIST OF COURSES IN THE SECOND YEAR : </h3>
+        <div  style={{ backgroundImage:`url(https://images.unsplash.com/photo-1536584754829-12214d404f32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` , backgroundSize:"cover" ,paddingTop:"240px", minHeight:"100vh"}}>
+        <div  style={{textAlign:"center",padding:"20px",color:"#ff8080" , background:"#ffe6e6" , margin:" 10px 30px"}}><h3>LIST OF COURSES IN THE SECOND YEAR : </h3></div>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
         {branchList}
         </div>
-        <div style={{paddingBottom:"30px"}}></div>
-        </>
+        </div>
     )
 }
 

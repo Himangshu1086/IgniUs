@@ -6,7 +6,11 @@ const postsSchema  = new mongoose.Schema({
                                 {
                                     title:{type:String},
                                     name:{type:String},
-                                    post:{type:String}
+                                    post:{type:String},
+                                    date :{type:String},
+                                    coverImg:{type:String},
+                                    personImg:{type:String}
+
                                 }
                             ]  
                         

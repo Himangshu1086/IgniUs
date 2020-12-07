@@ -12,7 +12,6 @@ const branchList = nitks.map(function(nitk){
             <Link href ={`/nitk/${nitk.branch}`} >   
             <div className="branch-card">
                 <div className="branch-photo-and-name">
-                    <img src="https://images.unsplash.com/photo-1532454971774-3990903f4c6e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"/>
                     <p>{nitk.branch}</p>
                 </div>
                 <div className="branch-card-description">
@@ -35,14 +34,11 @@ const branchList = nitks.map(function(nitk){
     return(
 
          
-        <>
-        <div style={{paddingTop:"200px"}}></div>
+        <div   style={{ backgroundImage:`url(https://images.unsplash.com/photo-1536584754829-12214d404f32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` , backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
          {branchList}
         </div>
-
-        <div style={{marginBottom:"100px"}}></div>
-        </>
+        </div>
     )
 }
 

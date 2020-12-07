@@ -1,4 +1,4 @@
-import { urlObjectKeys } from 'next/dist/next-server/lib/utils';
+
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 import baseUrl from '../../../HELPERS/baseUrl'
@@ -27,9 +27,9 @@ const branchList = years.map((year , i )=>{
                         return(
                             <>
                                 <Link href ={`/nitk/${branch}/${yr.yearname}`} > 
-                                <div className="branch-card" style={{border:"solid 2px red",height:"200px"}}>
+                                <div className="branch-card" style={{height:"150px"} }>
                                     <div className="branch-photo-and-name">
-                                        <p style={{fontSize:"30px" , paddingTop:"60px"}}>{yr.yearname}</p>
+                                        <p style={{fontSize:"20px"}}>{yr.yearname}</p>
                                     </div>   
                                 </div>
                                 </Link>
@@ -46,16 +46,18 @@ const branchList = years.map((year , i )=>{
     return(
 
          
-        <>
-        <div style={{paddingTop:"240px"}}></div>
-        <h3 style={{textAlign:"center",padding:"20px"}}>SELECT THE YEAR TO VIEW THE COURSES :</h3>
-        <div style={{display:"flex" , flexWrap:"wrap"}}>
+        <div style={{ backgroundImage:`url(https://images.unsplash.com/photo-1536584754829-12214d404f32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` , backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
+
+        <p style={{textAlign:"center",color:"#ff8080",boxShadow:"0px 0px 14px black", margin:"0px 50px" ,padding:"10px",background:"#ffe6e6",fontWeight:"bolder",fontSize:"30px"}}>SELECT THE YEAR TO VIEW THE COURSES :</p>
         
+        <div style={{display:"flex" , flexWrap:"wrap" ,paddingTop:"50px"}}>
          {branchList}
         </div>
+        
+        
 
-        <div style={{marginBottom:"360px"}}></div>
-        </>
+        
+        </div>
     )
 }
 

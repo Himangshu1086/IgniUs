@@ -44,7 +44,7 @@ const Ask =()=>{
             <div className="bodu" style={{padding:"200px 30px"}}>
                 
                 <form className="formforask" onSubmit={(e)=>handleSubmitQuestion(e)} >
-                    <input  className="form-control" required  autoFocus type="text" 
+                    <input  className="form-control" required  type="text" 
                     placeholder="Enter your name"
                     name="userName"
                     value={userName}

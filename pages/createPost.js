@@ -63,7 +63,7 @@ const handleSubmit= async (e)=>{
    else{
     console.log("SUCCESSFUL")
    }
-   router.push("/")
+   alert("POST ADDED")
 
 }
 
