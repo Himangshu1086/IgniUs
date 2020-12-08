@@ -65,7 +65,6 @@ const Navbar =()=>{
                     <Link  href="/quickLink/Class12"><div className="quick-link " id={isActive("/quickLink/Class12")} >Class12</div></Link>
                             
             </nav>
-            <div className="icon-from-arrow"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
             </div>
         </div>
         </>
