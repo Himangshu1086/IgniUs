@@ -75,9 +75,9 @@ const POSTS = posts.sort(function(a, b) {
 
 
   return (
-    <div className="bodu">
+    <div className="bodu" style={{border:"solid 2px",minHeight:"100vh" , background:`url(https://images.unsplash.com/photo-1607340385476-7f47b5700026?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80)` , backgroundRepeat:"no-repeat" , backgroundSize:"cover"}}>
       <Head>
-        <title>Home</title>
+        <title>IgniUS</title>
       </Head>
 
 <main>

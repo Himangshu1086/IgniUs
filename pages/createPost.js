@@ -82,16 +82,10 @@ const imageUpload = async ()=>{
 }
 
 
-if(process.browser){        
-   
-  
-    }
-   
-
     
 
     return(
-        <>
+        <div style={{minHeight:"100vh"}}>
         <Head>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
@@ -168,26 +162,6 @@ if(process.browser){
 
                     <label className="AskLabel" autoFocus for="output">POST : 
                     </label>
-                    <p>
-                        
-                        HEADING : # H1 ## H2 ### H3<br/>
-                        Blockquote : left opening arrow space blockquote<br/>
-                        BOLD : **bold**<br/>
-                        italic : *italic*<br/>
-                        orderedList :   1. first<br/>
-                                        1. second<br/>
-                                        1. third<br/>
-                        unorderedList : - first<br/>
-                                        - second<br/>
-                                        - third<br/>
-                        code        : `code`<br/>
-                        horizontal rule : ---<br/>
-                        Link  : [title](https://www.google.com)<br/>
-                        newline : \<br/>
-                        stroke through : <s></s><br/>
-
-                    </p>
-
                     <Link href="https://dillinger.io/"><h1 style={{cursor:"pointer"}}><a>CLICK HERE : MARKDOWN EDITOR TO WRITE POST</a></h1></Link>
 
                     <textarea  required  className="form-control abc" id="output" rows="7"
@@ -204,7 +178,7 @@ if(process.browser){
             </div>
             <br/><br/>
         </div>
-        </>
+        </div>
     )
 }
 

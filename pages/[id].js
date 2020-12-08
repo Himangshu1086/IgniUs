@@ -11,7 +11,7 @@ const PostDetail = ({posts})=>{
   const input = `${posts.post}`;
 
     return(
-        <div className="bodu">
+        <div className="bodu" style={{minHeight:"100vh"}}>
         <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p></p>
          
         <div className="postdetail">
