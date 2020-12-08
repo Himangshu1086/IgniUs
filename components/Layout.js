@@ -1,16 +1,12 @@
 import Head from 'next/head'
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Router from 'next/router'
-import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
+
 
 
 
 const layout = ({children})=>{
-        Router.events.on('routerChangeStart' ,()=> NProgress.start());
-        Router.events.on('routerChangeComplete', ()=> NProgress.done());
-        Router.events.on('routerChangeError' , () => NProgress.done());
+        
         return(
         <>
         <Head>

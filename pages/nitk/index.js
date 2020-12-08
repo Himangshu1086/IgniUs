@@ -3,7 +3,13 @@ import {useRouter} from 'next/router'
 import baseUrl from '../../HELPERS/baseUrl'
 
 
+
+
+
+
 const NITK =({nitks})=>{
+    
+
 
 const branchList = nitks.map(function(nitk){
     const para = 'Get the notes written by the students and also previous years questions asked in the semesters.'
