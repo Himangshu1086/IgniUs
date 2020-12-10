@@ -20,6 +20,14 @@ const Admin = ()=>{
                                     </div>   
                                 </div>
                                 </Link>
+
+                                <Link href ="/createPostForAdvMath" > 
+                                <div className="branch-card" style={{border:"solid 2px red",height:"230px"}}>
+                                    <div className="branch-photo-and-name">
+                                        <p style={{fontSize:"30px" , paddingTop:"60px"}}>CREATE COURSE POST FOR ADVANCED MATHS </p>
+                                    </div>   
+                                </div>
+                                </Link>
 </div>
 
 

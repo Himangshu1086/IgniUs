@@ -53,7 +53,7 @@ const{branch , year , course , post } = router.query;
 
     return(
         <>
-            <div>
+            <div style={{ minHeight:"100vh"}}>
                 {branchList}
             </div>
             

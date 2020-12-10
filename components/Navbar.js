@@ -56,13 +56,13 @@ const Navbar =()=>{
             <div className="quick-link-display" style={{display:"flex"}}>
             <nav className="NAVBAR-division-2" >
                     <Link  href="/nitk"><div className="quick-link " id={isActive("/nitk")} >NITK</div></Link>
-                    <Link  href="/quickLink/jee"><div className="quick-link " id={isActive("/quickLink/jee")} >JEE</div></Link>
-                    <Link  href="/quickLink/neet"><div className="quick-link " id={isActive("/quickLink/neet")} >NEET</div></Link>
-                    <Link  href="/quickLink/advancedMaths"><div className="quick-link " id={isActive("/quickLink/advancedMaths")} >AdvancedMaths</div></Link>
-                    <Link  href="/quickLink/Class9"><div className="quick-link " id={isActive("/quickLink/Class9")} >Class9</div></Link>
-                    <Link  href="/quickLink/Class10"><div className="quick-link " id={isActive("/quickLink/Class10")} >Class10</div></Link>
-                    <Link  href="/quickLink/Class11"><div className="quick-link " id={isActive("/quickLink/Class11")} >Class11</div></Link>
-                    <Link  href="/quickLink/Class12"><div className="quick-link " id={isActive("/quickLink/Class12")} >Class12</div></Link>
+                    <Link  href="/jee"><div className="quick-link " id={isActive("/quickLink/jee")} >JEE</div></Link>
+                    <Link  href="/neet"><div className="quick-link " id={isActive("/quickLink/neet")} >NEET</div></Link>
+                    <Link  href="/advancedMaths"><div className="quick-link " id={isActive("/advancedMaths")} >AdvancedMaths</div></Link>
+                    <Link  href="/Class9"><div className="quick-link " id={isActive("/quickLink/Class9")} >Class9</div></Link>
+                    <Link  href="/Class10"><div className="quick-link " id={isActive("/quickLink/Class10")} >Class10</div></Link>
+                    <Link  href="/Class11"><div className="quick-link " id={isActive("/quickLink/Class11")} >Class11</div></Link>
+                    <Link  href="/Class12"><div className="quick-link " id={isActive("/quickLink/Class12")} >Class12</div></Link>
                             
             </nav>
             </div>
