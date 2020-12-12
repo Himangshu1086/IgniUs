@@ -24,7 +24,7 @@ const NITK = ({courses})=>{
                                         <Link href ={`/nitk/${branch}/${year}/${cr.coursename}`} >  
                                             <div className="branch-card" style={{height:"150px"}}>
                                                 <div className="branch-photo-and-name">
-                                                    <p style={{fontSize:"30px" }}>{cr.coursename}</p>
+                                                    <p style={{fontSize:"30px" }}><i class="fa fa-book" aria-hidden="true"></i>{ cr.coursename}</p>
                                                 </div>
                                             </div>
                                         </Link>

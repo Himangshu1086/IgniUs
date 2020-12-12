@@ -29,7 +29,7 @@ const branchList = years.map((year , i )=>{
                                 <Link href ={`/nitk/${branch}/${yr.yearname}`} > 
                                 <div className="branch-card" style={{height:"150px"} }>
                                     <div className="branch-photo-and-name">
-                                        <p style={{fontSize:"20px"}}>{yr.yearname}</p>
+                                        <p style={{fontSize:"20px"}}><i class="fa fa-address-card-o" aria-hidden="true"></i>{ yr.yearname}</p>
                                     </div>   
                                 </div>
                                 </Link>

@@ -3,19 +3,32 @@ import {useState} from 'react'
 import { useRouter } from 'next/router'
 import baseUrl from '../HELPERS/baseUrl'
 import ReactMarkdown from 'react-markdown'
-
+const ReactMarkdownWithHtml = require('react-markdown/with-html')
 
 
 const PostDetail = ({posts})=>{
-    
+ 
+  
+ 
   const input = `${posts.post}`;
-
+ 
+  
+  
     return(
+      
         <div className="bodu" style={{minHeight:"100vh"}}>
-        <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p></p>
+        <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p>
+        <div>
+                <Link href={`https://api.whatsapp.com/send?text=${posts.postTitle}igni-us.vercel.app/${posts._id}`}><i className="fa fa-whatsapp icon" style={{fontSize:"20px"}} aria-hidden="true"></i></Link>
+                <Link href={`https://www.facebook.com/sharer.php?u=igni-us.vercel.app/${posts._id}`}><i class="fa fa-facebook icon" style={{fontSize:"20px"}} aria-hidden="true"></i></Link>
+              </div>
+        </p>
+        
+        
          
         <div className="postdetail">
-        <ReactMarkdown className="postInfo">{input}</ReactMarkdown>
+        {/* <ReactMarkdown className="postInfo">{input}</ReactMarkdown> */}
+        <ReactMarkdownWithHtml  className="postInfo" children={input} allowDangerousHtml />
         <div className="description" >
     
         <img className="photo" src={posts.imageUrl}/><br/><br/>

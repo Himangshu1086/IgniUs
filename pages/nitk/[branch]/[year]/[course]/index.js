@@ -24,9 +24,9 @@ const NITK = ({colleges})=>{
                                         <Link href ={`/nitk/${branch}/${year}/${course}/${co._id}`} >   
                                             <div className="branch-card" >
                                                 <div className="branch-photo-and-name">
-                                                    <img src={co.coverImg}/>
-                                                <h1>{co.title}</h1>
-                                                <p>{co.name}</p>  
+                                                    <img style={{borderRadius:"10px" , width:"100%" ,height:"100px" , paddingBottom:"10px"}} src={co.coverImg}/>
+                                                    <h5><i class="fa fa-book" aria-hidden="true"></i>{ co.title}</h5>
+                                                <span>{co.name}</span>  
                                                 </div>
                                             </div>
                                         </Link>
@@ -37,12 +37,6 @@ const NITK = ({colleges})=>{
                          </>
                      )
                 
-            }else {
-                return(
-                    <>
-                    <h1 style={{background:"white" , margin:"40px 40px" ,fontWeight:"bolder"}}>NO POST RIGHT NOW......</h1>
-                    </>
-                )
             }
         })
 

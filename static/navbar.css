@@ -1,6 +1,8 @@
 #active{
   border-bottom: 7px solid #0c3553;
+  background-color: #dededf;
   border-radius: 10px ;
+  color: black;
 }
 
 
@@ -54,7 +56,7 @@
 
   font-size: 30px;
   padding: 20px 60px;
-  font-family: Sofia;
+ 
   cursor: pointer;
   
 
@@ -93,8 +95,7 @@
 
 .quick-link{
   padding:10px 50px;
-  font-size: 30px;
-  font-family: Sofia;
+  font-size: 20px;
   cursor: pointer;
 }
 .quick-link:hover{
@@ -161,7 +162,7 @@
   
     font-size: 20px;
     padding: 20px 12px;
-    font-family: Sofia;
+    
     
   
   }
@@ -198,9 +199,8 @@
  
   
   .quick-link{
-    padding:15px 45px;
+    padding:10px 45px;
     font-size: 20px;
-    font-family: Sofia;
   
   }
 

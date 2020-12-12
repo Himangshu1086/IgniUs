@@ -291,6 +291,7 @@ a{
     font-size: 45px;
     text-align: center;
     color: rgb(16, 120, 129);
+    padding: 0px 20px;
 
     
 }
@@ -318,7 +319,7 @@ a{
     
 
 }
-.postdetail{
+/* .postdetail{
    
    
     color:rgb(0, 0, 0);
@@ -332,7 +333,7 @@ a{
     
     
 
-}
+} */
 
 .photo{
 
@@ -353,13 +354,18 @@ a{
 .postInfo{
 
             overflow-x: auto;
-            white-space: pre-wrap;
+            /* white-space: pre-wrap;
             white-space: -moz-pre-wrap;
             white-space: -pre-wrap;
             white-space: -o-pre-wrap;
-            word-wrap: break-word;
+            word-wrap: break-word; */
             font-family: Adamina;
             line-height: 50px;
+            color:rgb(0, 0, 0);
+            text-align: left;
+            padding:20px;
+            margin: 5px 500px;
+            font-size: 25px;
 }
 
 
@@ -598,11 +604,12 @@ font-family: Allerta Stencil;
     color:rgb(0, 0, 0);
     text-align: left;
     padding:10px;
-    font-family: Sofia;
     font-size: 15px;
     height: auto;
     margin: 10px 20px;
     justify-content: center;
+    font-family: Adamina;
+    line-height: 35px;
     
     
 
@@ -637,7 +644,13 @@ font-family: Allerta Stencil;
             white-space: -o-pre-wrap;
             word-wrap: break-word;
             padding: 8px;
-            line-height: 30px;
+            line-height: 40px;
+            color:rgb(0, 0,0);
+            text-align: left;
+            
+            margin: 20px 9px;
+            font-size: 17px;
+            height: auto;
 }
 
 /*=========================nabvar===========================*/
