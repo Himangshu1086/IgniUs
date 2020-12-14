@@ -3,10 +3,6 @@ import {useRouter} from 'next/router'
 import baseUrl from '../../HELPERS/baseUrl'
 
 
-
-
-
-
 const NITK =({nitks})=>{
     
 
@@ -18,7 +14,7 @@ const branchList = nitks.map(function(nitk){
             <Link href ={`/nitk/${nitk.branch}`} >   
             <div className="branch-card">
                 <div className="branch-photo-and-name">
-                    <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>{ nitk.branch}</p>
+                    <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>{nitk.branch}</p>
                 </div>
                 <div className="branch-card-description">
                     <p>

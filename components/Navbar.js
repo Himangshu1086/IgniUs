@@ -3,10 +3,10 @@ import {parseCookies} from 'nookies'
 import {useRouter} from 'next/router'
 import cookie from 'js-cookie'
 
+
 const Navbar =()=>{
 
     const router = useRouter(); 
-
     const {token} = parseCookies();
     let admin = false;
     if(token){
@@ -42,7 +42,7 @@ const Navbar =()=>{
 
                     <>
                         <Link  href="/questionAsked"><div className="quick-link" id={isActive("/questionAsked")} >AskedQuestion</div></Link>
-                        <Link  href="/ADMIN"><div  className="quick-link " id={isActive("/createPost")} >ADMIN</div></Link>
+                        <Link  href="/ADMIN"><div  className="quick-link " id={isActive("/ADMIN")} >ADMIN</div></Link>
                         <Link href="/login"><div className="quick-link"id={isActive("/login")} onClick={()=>{
                                     cookie.remove('token')
                                     router.push("/login")
