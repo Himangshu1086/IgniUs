@@ -4,7 +4,7 @@ const ADVMATHS =()=>{
     
 
     const para = 'Get the notes written by the students and also previous years questions asked in the semesters.'
-    const subjectsA = ['SOCIAL SCIENCE assamese' , 'MATHEMATICS assamese' , 'SCIENCE assamese']
+    const subjectsA = ['সমাজ বিজ্ঞান ' , 'গণিত' , 'বিজ্ঞান']
     const subjectsE = ['SOCIAL SCIENCE' , 'MATHEMATICS' , 'SCIENCE']
 
 
