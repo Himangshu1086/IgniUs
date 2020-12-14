@@ -12,7 +12,7 @@ const branchList = nitks.map(function(nitk){
     return(
         <>
             <Link href ={`/nitk/${nitk.branch}`} >   
-            <div className="branch-card">
+            <div className="branch-card" style={{borderRadius:"5px"}}>
                 <div className="branch-photo-and-name">
                     <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>{nitk.branch}</p>
                 </div>
@@ -36,7 +36,7 @@ const branchList = nitks.map(function(nitk){
     return(
 
          
-        <div   style={{ backgroundImage:`url(https://images.unsplash.com/photo-1500402448245-d49c5229c564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` , backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
+        <div   style={{ backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
          {branchList}
         </div>

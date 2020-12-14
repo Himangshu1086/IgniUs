@@ -638,17 +638,17 @@ font-family: Allerta Stencil;
 .postInfo{
 
             overflow-x: auto;
-            white-space: pre-wrap;
+            /* white-space: pre-wrap;
             white-space: -moz-pre-wrap;
             white-space: -pre-wrap;
-            white-space: -o-pre-wrap;
+            white-space: -o-pre-wrap; */
             word-wrap: break-word;
             padding: 8px;
             line-height: 40px;
             color:rgb(0, 0,0);
             text-align: left;
             
-            margin: 20px 9px;
+            margin: 20px 5px;
             font-size: 17px;
             height: auto;
 }

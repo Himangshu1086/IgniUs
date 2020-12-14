@@ -26,7 +26,7 @@ const NITK = ({colleges})=>{
                                                 <div className="branch-photo-and-name">
                                                     <img style={{borderRadius:"10px" , width:"100%" ,height:"100px" , paddingBottom:"10px"}} src={co.coverImg}/>
                                                     <h5><i class="fa fa-book" aria-hidden="true"></i>{ co.title}</h5>
-                                                <span>{co.name}</span>  
+                                                <span>contributed by : {co.name}</span>  
                                                 </div>
                                             </div>
                                         </Link>
@@ -45,7 +45,7 @@ const NITK = ({colleges})=>{
 
 
     return(
-        <div style={{ backgroundImage:`url(https://images.unsplash.com/photo-1500402448245-d49c5229c564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)` , backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
+        <div style={{ backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
          {branchList}
         </div>
