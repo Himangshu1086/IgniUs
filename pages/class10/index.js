@@ -59,7 +59,7 @@ const ADVMATHS =()=>{
             <Link href ={`/class10/ASSAMESE`} >   
                 <div className="branch-card">
                     <div className="branch-photo-and-name">
-                        <p>ASSAMESE</p>
+                        <p>অসমীয়া</p>
                     </div>
                     <div className="branch-card-description">
                         <p>
