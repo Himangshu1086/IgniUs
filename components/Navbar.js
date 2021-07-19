@@ -2,6 +2,7 @@ import Link from 'next/link'
 import {parseCookies} from 'nookies'
 import {useRouter} from 'next/router'
 import cookie from 'js-cookie'
+import { useState } from 'react'
 
 
 const Navbar =()=>{
@@ -24,6 +25,8 @@ const Navbar =()=>{
         }
         else "";
     }
+
+
 
     return(
         <>
@@ -56,17 +59,15 @@ const Navbar =()=>{
             <div className="quick-link-display" style={{display:"flex"}}>
             <nav className="NAVBAR-division-2" >
                     <Link  href="/"><div className="quick-link " id={isActive("/")} >Home</div></Link>
-                    <Link  href="/jee"><div className="quick-link " id={isActive("/jee")} >JEE</div></Link>
-                    <Link  href="/neet"><div className="quick-link " id={isActive("/neet")} >NEET</div></Link>
                     <Link  href="/advancedMaths"><div className="quick-link " id={isActive("/advancedMaths")} >AdvancedMaths</div></Link>
-                    <Link  href="/class9"><div className="quick-link " id={isActive("/class9")} >Class9</div></Link>
                     <Link  href="/class10"><div className="quick-link " id={isActive("/class10")} >Class10</div></Link>
-                    <Link  href="/class11"><div className="quick-link " id={isActive("/class11")} >Class11</div></Link>
-                    <Link  href="/class12"><div className="quick-link " id={isActive("/class12")} >Class12</div></Link>
                             
             </nav>
             </div>
         </div>
+
+
+        
         </>
     )
 }

@@ -126,22 +126,51 @@ a{
 /* HOME PAGE    */
 
 .bodu{
-    padding-top: 180px;
+    /* padding-top: 180px; */
 }
 
 .socialMedia{
+    position: relative;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    margin-left: 40px;
-    
+    font-size: larger;
 }
 
 
 .form-inline{
-    margin-top: 30px;
-    margin-left: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    z-index: 10;
     
 }
 
+.form-inline > input{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.home_page_intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 30;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+.home_page_intro >h1 {
+
+    font-size: 50px;
+    margin-bottom: 50px;
+}
 
 .btn{
     border-radius: 10px !important;
@@ -149,10 +178,13 @@ a{
     color: white;
 }
 .card-group1{
-    margin : 20px 20px;
+
     display:flex;
+    position: relative;
+    top: -300px;
+    justify-content: center;
     flex-wrap: wrap !important;
-    
+    height: auto;
     
     
 }
@@ -229,13 +261,7 @@ a{
     
     
 }
-.form-control{
 
-    border-radius: 25px;
-    padding: 10px;
-    font-size: 20px;
-    border: black solid 1px;
-}
 
 .submitBtn{
     font-size: 20px;
@@ -654,12 +680,11 @@ font-family: Allerta Stencil;
 }
 
 /*=========================nabvar===========================*/
-.nav-link{
 
-    font-size: 15px;
 
+.box-for-header{
+    z-index: 40 !important ;
 }
-
 
 }
 

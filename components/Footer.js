@@ -6,8 +6,18 @@ const Footer =()=>{
 
 
     return(
-      
+      <>
+      <label className="socialMedia">follow us 👍  </label>
+      <div className="socialMedia" id="socialHandle">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
         <div class="card-footer" style={{background:"black"}}>
+        
             <div className="quickLINK">
                     <p>QUICK LINK
                     </p>
@@ -20,7 +30,7 @@ const Footer =()=>{
                 </div>
                 
         </div>
-   
+   </>
     
     )
 

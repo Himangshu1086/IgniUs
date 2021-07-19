@@ -9,7 +9,7 @@ import ReactMarkdown from 'react-markdown'
 
 export default function Home({posts}) {
 
-const [searchTerm , setsearchTerm] = useState("");
+  const [searchTerm , setsearchTerm] = useState("");
 
 
 const POSTS = posts.sort(function(a, b) {
@@ -75,7 +75,7 @@ const POSTS = posts.sort(function(a, b) {
 
 
   return (
-    <div className="bodu" style={{minHeight:"100vh" ,  backgroundRepeat:"no-repeat" , backgroundSize:"cover"}}>
+    <div className="bodu"  >
       <Head>
         <title>IgniUS</title>
       </Head>
@@ -90,28 +90,27 @@ const POSTS = posts.sort(function(a, b) {
   <>
   </>  
 }
-  {/* <div className="socialMedia" id="socialHandle">
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-google"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-  <a href="#" class="fa fa-youtube"></a>
-  <a href="#" class="fa fa-instagram"></a>
-
-  </div> */}
   
-    <form className="form-inline">
-      <input className="form-control mr-sm-2" type="text"
-      value={searchTerm}
-      onChange={(e)=>{
-        setsearchTerm(e.target.value);
-      }}
-       placeholder="Search" />
-    </form>
+<div style={{position:"relative" , top:"-100px" , background:"black" }} > 
+        {/* <form className="form-inline">
+            <input type="text"
+            value={searchTerm}
+            onChange={(e)=>{
+                setsearchTerm(e.target.value);
+            }}
+            placeholder="Search" />
+            </form> */}
+            <div className="home_page_intro">
+            <h1>IgniUs</h1>
+            <p>“If people are doubting how far you can go, go so far that you can’t hear them anymore.” – Michele Ruiz</p>
+            </div>
+            <img style={{ opacity:".4" , objectFit:"fill" , width:"100%" , height:"96vh"}} src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80 " alt="image" />
+        </div>
+  
+
 
       <div className="card-group1">
       {postList}
-
       </div>
     
         
