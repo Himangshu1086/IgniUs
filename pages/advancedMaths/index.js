@@ -4,9 +4,6 @@ import baseUrl from '../../HELPERS/baseUrl'
 
 
 
-
-
-
 const ADVMATHS =({advancedMaths})=>{
     
 
@@ -40,8 +37,8 @@ const branchList = advancedMaths.map(function(AM){
     return(
 
          
-        <div   style={{ backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
-        <div style={{display:"flex" , flexWrap:"wrap"}}>
+        <div   style={{ backgroundSize:"cover" ,paddingTop:"40px", minHeight:"100vh"  }}>
+        <div style={{display:"flex" , flexWrap:"wrap" ,justifyContent:"center"}}>
          {branchList}
         </div>
         </div>

@@ -30,7 +30,7 @@ const ADVMATHS =({advancedmathspost})=>{
 
                                             return(
                                                 <>
-                                                       <div className="bodu">
+                                                       <div>
                                                             <p className="postTitle" >{po.title}<p className="time">{po.date}</p>
                                                             <div>
                                                                 <Link href={`https://api.whatsapp.com/send?text=${po.title}igni-us.vercel.app/${po._id}`}><i className="fa fa-whatsapp icon" style={{fontSize:"20px"}} aria-hidden="true"></i></Link>

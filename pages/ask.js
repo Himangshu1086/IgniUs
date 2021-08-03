@@ -40,8 +40,8 @@ const Ask =()=>{
 
 
     return(
-        <div style={{minHeight:"100vh"}}>
-            <div className="bodu" style={{padding:"0% 30px" , paddingTop:"200px"}}>
+        <div style={{minHeight:"100vh" , width:"auto" , display:"flex", position:"relative" , justifyContent:"center" , alignItems:"center"}}>
+            <div style={{padding:"0% 30px" , paddingTop:"20px"}}>
                 
                 <form className="formforask" onSubmit={(e)=>handleSubmitQuestion(e)} >
                     <input  className="form-control" required  type="text" 

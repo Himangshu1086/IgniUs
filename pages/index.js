@@ -4,8 +4,7 @@ import { useState } from 'react'
 import baseUrl from '../HELPERS/baseUrl'
 import {parseCookies} from 'nookies'
 import ReactMarkdown from 'react-markdown'
-
-
+import Slideshow from './SlideShow'
 
 export default function Home({posts}) {
 
@@ -25,6 +24,7 @@ const POSTS = posts.sort(function(a, b) {
   // names must be equal
   return 0;
 });
+
 
 
 
@@ -75,15 +75,17 @@ const POSTS = posts.sort(function(a, b) {
 
 
   return (
-    <div className="bodu"  >
+    <div >
       <Head>
         <title>IgniUS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+
       </Head>
 
 <main>
   {admin ?
   <>
-    <div style={{marginTop:"120px" }}>
+    <div>
     </div>
   </>
   :
@@ -91,20 +93,11 @@ const POSTS = posts.sort(function(a, b) {
   </>  
 }
   
-<div style={{position:"relative" , top:"-100px" , background:"black" }} > 
-        {/* <form className="form-inline">
-            <input type="text"
-            value={searchTerm}
-            onChange={(e)=>{
-                setsearchTerm(e.target.value);
-            }}
-            placeholder="Search" />
-            </form> */}
-            <div className="home_page_intro">
-            <h1>IgniUs</h1>
-            <p>“If people are doubting how far you can go, go so far that you can’t hear them anymore.” – Michele Ruiz</p>
-            </div>
-            <img style={{ opacity:".4" , objectFit:"fill" , width:"100%" , height:"96vh"}} src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80 " alt="image" />
+<div style={{position:"relative"}}> 
+       
+             <h1 className="home_page_intro_heading">IgniUs</h1>
+              <p className="home_page_intro_para" >“If people are doubting how far you can go, go so far that you can’t hear them anymore.” <br></br> <strong> – Michele Ruiz</strong> </p>
+            <Slideshow/>
         </div>
   
 
@@ -115,7 +108,7 @@ const POSTS = posts.sort(function(a, b) {
     
         
     
-        
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </main>
 
      

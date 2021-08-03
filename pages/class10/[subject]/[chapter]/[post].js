@@ -68,7 +68,7 @@ const ADVMATHS =({classtenposts})=>{
     return(
 
          
-        <div   style={{ paddingTop:"180px", minHeight:"100vh"}}>
+        <div   style={{ paddingTop:"20px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
          {branchList}
         </div>

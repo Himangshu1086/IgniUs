@@ -55,7 +55,7 @@ const ADVMATHS =({classtensubjects})=>{
     return(
 
          
-        <div   style={{ backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
+        <div   style={{ backgroundSize:"cover" ,paddingTop:"20px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
          {branchList}
         </div>

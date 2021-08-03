@@ -54,7 +54,7 @@ const ADVMATHS =()=>{
     return(
 
          
-        <div   style={{  backgroundSize:"cover" ,paddingTop:"200px", minHeight:"100vh"}}>
+        <div   style={{  backgroundSize:"cover" ,paddingTop:"20px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>    
             <Link href ={`/class10/ASSAMESE`} >   
                 <div className="branch-card">

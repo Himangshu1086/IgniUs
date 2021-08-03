@@ -53,7 +53,7 @@ const ADVMATHS =({advancedmathsposts})=>{
     return(
 
          
-        <div   style={{backgroundSize:"cover" ,paddingTop:"180px", minHeight:"100vh"}}>
+        <div   style={{backgroundSize:"cover" ,paddingTop:"40px", minHeight:"100vh"}}>
         <div style={{display:"flex" , flexWrap:"wrap"}}>
          {branchList}
         </div>

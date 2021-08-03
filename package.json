@@ -10,6 +10,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^23.1.0",
     "@ckeditor/ckeditor5-react": "^3.0.0",
+    "caniuse-lite": "^1.0.30001248",
     "js-cookie": "^2.2.1",
     "jsonwebtoken": "^8.5.1",
     "marked": "^1.2.5",
@@ -20,6 +21,7 @@
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-markdown": "^5.0.3"
+    "react-markdown": "^5.0.3",
+    "react-slideshow-image": "^3.5.0"
   }
 }

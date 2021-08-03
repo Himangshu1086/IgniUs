@@ -18,12 +18,15 @@ const layout = ({children})=>{
         <link rel="stylesheet" href="../static/Navbar.css"/>
         <link rel="stylesheet" href="../static/navbar.css"/>
         <link rel="stylesheet" href="../static/nitk.css"/>
+        <link rel="stylesheet" href="../static/Login.css"/>
+        <link rel="stylesheet" href="../static/Contribute.css"/>
         <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'></link>
         <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        
         
         
 
