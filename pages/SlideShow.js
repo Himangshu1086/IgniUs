@@ -12,7 +12,7 @@ export default function Slideshow() {
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   
-  <div class="carousel-inner slideshow" style={{opacity:"0.4"}} >
+  <div class="carousel-inner slideshow" style={{opacity:"0.6"}} >
     <div class="carousel-item active">
       <img class=" w-100 " src="https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="First slide"/>
     </div>
