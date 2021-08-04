@@ -1,3 +1,51 @@
+
+
+
+.login{
+  min-height: 90vh;
+  width: 100%;
+  background: radial-gradient(#653d84, #332042);
+  position: relative;
+}
+
+.login_box {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact > form >input{
+  padding: 14px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+}
+.contact > form >h3{
+text-align: center;
+color: white;
+}
+.contact > form >button{
+  text-align: center;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 20px;
+  background-color: rgb(12, 126, 126);
+  color: white;
+  }
+  .contact > form >button:hover{
+    background-color: rgb(13, 102, 102);
+  }
+.right{
+  display: none;
+}
+
+
+
+@media screen and (min-width: 800px){
+
 img{
 	width: 100%;
 }
@@ -125,3 +173,4 @@ img{
 
 
 
+}

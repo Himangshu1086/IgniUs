@@ -47,11 +47,7 @@ const Login =()=>{
     return(
         <>
 
-                <div class="parent clearfix">
-                <div class="bg-illustration">
-                <h1>IgniUs</h1>
-                </div>
-
+                <div >
                 <div class="login">
                 <div class="container">
                     <h1 >LOGIN </h1>
@@ -80,9 +76,9 @@ const Login =()=>{
                                     <div class="forget-pass">
                                     <a href="#">Forgot Password ?</a>
                                     </div>
-                                    <button type="submit">LOG-IN</button>
+                                    <button onClick={handleSubmits}>LOG-IN</button>
                                     
-                    </form>
+                                    </form>
                     </div>
 
                 </div>

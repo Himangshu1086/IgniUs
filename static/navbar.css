@@ -94,12 +94,13 @@
 
 
 .quick-link{
-  padding:10px 50px;
+  padding:10px 30px;
   font-size: 20px;
   cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
 }
 .quick-link:hover{
-  background-color: #a5a5a5;
+  background-color: #36497c;
   
 }
 
@@ -111,11 +112,6 @@
 
 @media screen and (max-width:1400px){
 
-  #active{
-    border-bottom: 3px solid #0c3553;
-    border-radius: 5px;
-  }
-  
 
   .box-for-header{
     position: fixed;
