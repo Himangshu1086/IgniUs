@@ -26,6 +26,7 @@ const createPost = ()=>{
 
 const router = useRouter()
 const [writerName , setwriterName] = useState("");
+const [ postCategory , setPostCategory] = useState("");
 const [college , setcollege] = useState("");
 const [JEEMains ,setJEEMains] = useState("");
 const [JEEAdvanced ,setJEEAdvanced ] = useState("");
@@ -51,7 +52,7 @@ const handleSubmit= async (e)=>{
         'Content-Type':'application/json'
        },
        body:JSON.stringify({
-        writerName ,college ,JEEMains,JEEAdvanced,branch ,classXIIpercentage,XIICollege , postTitle , post,imageUrl:image , smallPost
+        writerName ,postCategory,college ,JEEMains,JEEAdvanced,branch ,classXIIpercentage,XIICollege , postTitle , post,imageUrl:image , smallPost
        }) 
 
    })
@@ -91,8 +92,8 @@ const imageUpload = async ()=>{
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         <link rel="stylesheet" href="/richtext.min.css"/>
         </Head>
-        <div className="bodu">
-         {admin ?<><div style={{marginTop:"120px" }}></div></>:<></>}
+        <div>
+         {admin ?<><div ></div></>:<></>}
 
            <div className="container" onSubmit={(e)=>handleSubmit(e)}>
            <label className="AskLabel">ADMIN PANEL :</label>
@@ -100,6 +101,10 @@ const imageUpload = async ()=>{
                     <input  className="form-control" required autoFocus type="text" placeholder="WRITER NAME" 
                     name="writerName" value={writerName} 
                     onChange={(e)=>{setwriterName(e.target.value)}} /><br/>
+
+                    <input  className="form-control" required autoFocus type="text" placeholder="Post Category Type" 
+                    name="postCategory" value={postCategory} 
+                    onChange={(e)=>{setPostCategory(e.target.value)}} /><br/>
 
                     <input className="form-control"   required type="text" placeholder="present College"
                     name="college" value={college} 
@@ -160,10 +165,7 @@ const imageUpload = async ()=>{
                     ></textarea><br/>
 
 
-                    <label className="AskLabel" autoFocus for="output">POST : 
-                    </label>
-                    <Link href="https://dillinger.io/"><h1 style={{cursor:"pointer"}}><a>CLICK HERE : MARKDOWN EDITOR TO WRITE POST</a></h1></Link>
-
+                  <label>POST ( in markdown ) : </label>
                     <textarea  required  className="form-control abc" id="output" rows="7"
                     name="post" value={post} 
                     onChange={(e)=>{setpost (e.target.value)}}

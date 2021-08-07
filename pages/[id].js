@@ -16,7 +16,7 @@ const PostDetail = ({posts})=>{
   
     return(
       
-        <div className="bodu" style={{minHeight:"100vh"}}>
+        <div style={{minHeight:"100vh"}}>
         <p className="postTitle" >{posts.postTitle}<p className="time">{posts.smallPost}</p>
         <div>
                 <Link href={`https://api.whatsapp.com/send?text=${posts.postTitle}igni-us.vercel.app/${posts._id}`}><i className="fa fa-whatsapp icon" style={{fontSize:"20px"}} aria-hidden="true"></i></Link>

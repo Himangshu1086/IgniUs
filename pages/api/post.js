@@ -27,9 +27,9 @@ const allPost = async (req ,res)=>{
 }
 
 const savePost = async (req , res) =>{
-    const {writerName ,college ,JEEMains,JEEAdvanced,branch ,classXIIpercentage,XIICollege , postTitle , post,imageUrl , smallPost} = req.body;
+    const {writerName ,postCategory,college ,JEEMains,JEEAdvanced,branch ,classXIIpercentage,XIICollege , postTitle , post,imageUrl , smallPost} = req.body;
     const postSave = await new Post({
-        writerName ,college ,JEEMains,JEEAdvanced,branch ,classXIIpercentage,XIICollege , postTitle , post,imageUrl , smallPost
+        writerName,postCategory ,college ,JEEMains,JEEAdvanced,branch ,classXIIpercentage,XIICollege , postTitle , post,imageUrl , smallPost
     }).save()
     res.status(201).json(postSave);
 }

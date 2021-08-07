@@ -6,6 +6,10 @@ const postsSchema  = new mongoose.Schema({
         type:String,
         required : true
     },
+    postCategory : {
+        type:String,
+        required: true
+    },
     postTitle : {
 
         type:String,
