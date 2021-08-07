@@ -100,6 +100,15 @@ const POSTS = posts.sort(function(a, b) {
             <Slideshow/>
         </div>
   
+<div className="sort_box">
+  <label>Sort by : </label>
+  <select>
+    <option>All Post</option>
+    <option>Jee </option>
+    <option>Neet</option>
+    <option>Technology</option>
+  </select>
+</div>
 
 
       <div className="card-group1">

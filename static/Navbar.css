@@ -104,6 +104,15 @@ a{
 .slideshow{
     height: 80vh;  
 }
+.sort_box{
+    margin-left: 20px;
+}
+.sort_box > select{
+
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 6px;
+}
 .home_page_intro_heading {
     position: absolute;
     top: 35%;
@@ -659,7 +668,7 @@ font-family: Allerta Stencil;
             color:rgb(0, 0,0);
             text-align: left;
             
-            margin: 20px 5px;
+            margin: 15px 5px;
             font-size: 17px;
             height: auto;
 }
