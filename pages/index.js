@@ -8,7 +8,8 @@ import Slideshow from './SlideShow'
 
 export default function Home({posts}) {
 
-  const [searchTerm , setsearchTerm] = useState("");
+  const [searchTerm , setSearchTerm] = useState("");
+  const [postCat , setPostCat] = useState("");
 
 
 const POSTS = posts.sort(function(a, b) {
@@ -24,7 +25,6 @@ const POSTS = posts.sort(function(a, b) {
   // names must be equal
   return 0;
 });
-
 
 
 
@@ -70,8 +70,13 @@ const POSTS = posts.sort(function(a, b) {
     }
 
 
+const postAccordingtoCat=async(e)=>{
 
+  setPostCat(e.target.value)
 
+}
+
+POSTS.find(post=>{ if(post.postCategory === postCat) {console.log(post)}}) 
 
 
   return (
@@ -100,15 +105,15 @@ const POSTS = posts.sort(function(a, b) {
             <Slideshow/>
         </div>
   
-<div className="sort_box">
+{/* <div className="sort_box">
   <label>Sort by : </label>
-  <select>
-    <option>All Post</option>
-    <option>Jee </option>
-    <option>Neet</option>
-    <option>Technology</option>
+  <select onChange={postAccordingtoCat} >
+    <option value="All Post">All Post</option>
+    <option value="Jee" >Jee </option>
+    <option  value="Neet" >Neet</option>
+    <option value="Technology" >Technology</option>
   </select>
-</div>
+</div> */}
 
 
       <div className="card-group1">

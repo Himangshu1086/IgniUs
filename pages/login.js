@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import baseUrl from '../HELPERS/baseUrl'
 import cookie from 'js-cookie'
 
-
 const Login =()=>{
 
     const router = useRouter()
@@ -30,8 +29,10 @@ const Login =()=>{
         if(res2.error){
             console.log(res2.error)
         }else{
-            cookie.set('token' , res.token)
-            router.push("/createPost");
+            cookie.set('token' , res2.token , {secure:true});
+            router.push("/");
+            alert("Welcome ")
+            //window.location.reload();
 
         }
         

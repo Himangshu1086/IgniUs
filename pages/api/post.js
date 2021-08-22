@@ -12,11 +12,13 @@ export default async (req , res )=>{
             break;
         case "POST":
              await savePost(req , res);
+             
              break;
     }
 
    
 }
+
 
 
 const allPost = async (req ,res)=>{

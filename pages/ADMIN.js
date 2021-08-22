@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
-const Admin = ()=>{
+const Admin = ({adminUser})=>{
+    
+    console.log(adminUser)
     return(
         <div style={{minHeight:"100vh"}}>
 <div style={{paddingTop:"320px" }}></div>
@@ -44,3 +46,4 @@ const Admin = ()=>{
 }
 
 export default Admin
+

@@ -1,14 +1,25 @@
 import Link from 'next/link'
 import {parseCookies} from 'nookies'
+import baseUrl from '../HELPERS/baseUrl'
 import {useRouter} from 'next/router'
 import cookie from 'js-cookie'
+import { useEffect , useState } from 'react'
 
-const Navbar =()=>{
+export default function Navbar({adminUser}){
+
+  const [userVerified , setUserVerified] = useState();
+
+  useEffect(async()=>{
+
+    const res = await fetch(`${baseUrl}/api/GetUser`);
+    const adminUser = await res.json()
+    setUserVerified(adminUser);
+  },[])
+
 
     const router = useRouter(); 
-    const {token} = parseCookies();
     let admin = false;
-    if(token){
+    if(userVerified){
         admin = true
     }
     else{
@@ -30,14 +41,14 @@ const Navbar =()=>{
         <>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white mr-auto ">
-  <a class="navbar-brand ml-2" style={{fontSize:"25px" ,fontFamily:"cursive" , letterSpacing:"8px" , color:"#9bbbd3"}} href="/">IgniUs</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" ></span>
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white mr-auto ">
+  <a className="navbar-brand ml-2" style={{fontSize:"25px" ,fontFamily:"cursive" , letterSpacing:"8px" , color:"#9bbbd3"}} href="/">IgniUs</a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon" ></span>
   </button>
-  <div class="collapse navbar-collapse  " id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+  <div className="collapse navbar-collapse  " id="navbarNav">
+    <ul className="navbar-nav ml-auto">
+      <li className="nav-item active">
       <Link  href="/"><div className="quick-link " id={isActive("/")} >Home</div></Link>
       </li>
       <li class="nav-item">
@@ -63,6 +74,7 @@ const Navbar =()=>{
             <li><Link href="/login"><div className="quick-link"id={isActive("/login")} onClick={()=>{
                         cookie.remove('token')
                         router.push("/login")
+                        window.location.reload();
             }} >Logout</div></Link></li>
         </>
         :
@@ -76,7 +88,9 @@ const Navbar =()=>{
     )
 }
 
-export default Navbar;
+
+
+
 
 
 
